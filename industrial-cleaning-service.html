@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/redketchup/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/redketchup/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/redketchup/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/redketchup/site.webmanifest" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <meta
+      name="description"
+      content="Light industrial units, warehouses and production spaces cleaned with safety-first routines. After-builders and post-refurb cleaning across London, Greater Manchester and Berkshire."
+    />
+    <meta
+      name="keywords"
+      content="industrial cleaning, warehouse cleaning, factory cleaning, production floor cleaning, after builders cleaning, post refurbishment cleaning, degreasing, Noornest industrial services"
+    />
+
+    <meta name="author" content="Noornest Cleaning Services" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://www.noornestcleaning.co.uk/residential.html"
+    />
+    <meta
+      property="og:title"
+      content="Residential & Domestic Cleaning | Noornest Cleaning Services"
+    />
+    <meta
+      property="og:description"
+      content="Fresh Nest, Deep Nest, New Nest and Reset Clean – tailored residential cleaning services for homes and flats across London, Greater Manchester and Berkshire."
+    />
+    <meta
+      property="og:image"
+      content="https://www.noornestcleaning.co.uk/images/og-image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://www.noornestcleaning.co.uk/residential.html"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Noornest | Industrial & Specialist Cleaning</title>
+  </head>
+  <body>
+    <!-- <a href="#mainContent" class="skip-link">Skip to main content</a> -->
+
+    <header>
+      <div class="logo-nav">
+        <a href="./index.html" class="logo">
+          <img src="./images/logo.png" alt="Noornest Cleaning Services logo" />
+        </a>
+
+        <nav role="navigation" aria-label="Main navigation">
+          <ul class="nav-links" role="list">
+            <li role="listitem">
+              <a href="./index.html">Home</a>
+            </li>
+
+            <li role="listitem">
+              <a href="./aboutus.html">About Us</a>
+            </li>
+
+            <li
+              role="listitem"
+              class="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <a class="dropdown-link" href="./services.html"
+                >Services
+                <i aria-hidden="true" class="fa-solid fa-chevron-down"></i
+              ></a>
+
+              <ul role="list" class="dropdown-content">
+                <!-- <li class="dropdown-menu" role="listitem">
+                  <a href="./services.html">Our Services</a>
+                </li> -->
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./residential-cleaning-service.html"
+                    >Home & Personal Cleaning</a
+                  >
+                </li>
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./offices-workplaces-cleaning-service.html"
+                    >Offices & Workplaces Cleaning</a
+                  >
+                </li>
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./retail-clinics-schools-cleaning-service.html"
+                    >Retail, Clinics & Schools</a
+                  >
+                </li>
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./industrial-cleaning-service.html"
+                    >Industrial & Specialist</a
+                  >
+                </li>
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./properties-cleaning-service.html"
+                    >Property & Real Estate</a
+                  >
+                </li>
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./cleaning-service-addOns.html">Add-On Services </a>
+                </li>
+              </ul>
+            </li>
+
+            <li role="listitem">
+              <a href="./contact.html">Contact Us</a>
+            </li>
+
+            <li role="listitem">
+              <a href="./career.html">Career</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="cta-menu">
+        <ul role="list" class="cta-header">
+          <li class="cta1" role="listitem"><a href="contact.html">Book a Clean</a></li>
+          <li class="cta2" role="listitem"><a href="free-quote.html">Get a Free Quote</a></li>
+          <li class="cta2 cta3" role="listitem"><a href="free-quote.html">Get a Quote</a></li>
+        </ul>
+        <button
+          type="button"
+          onclick="toggleMenu()"
+          class="hamburger"
+          aria-label="Toggle navigation menu"
+        >
+          <i aria-hidden="true" class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <main id="mainContent">
+      <!-- HERO -->
+      <section class="commercial-hero industrial">
+        <div class="commercial-hero-text">
+          <p>Safety-first</p>
+          <h1>
+            <span>Industrial &amp; specialist</span> cleaning with control
+          </h1>
+          <p>
+            Robust cleaning routines for light industrial units, warehouses and
+            production spaces, with safety and site rules front of mind.
+          </p>
+          <div class="commercial-hero-cta">
+            <ul role="list" class="cta-commercial">
+              <li role="listitem" class="com-cta1 industrial">
+                <a href="#">Request a site survey</a>
+              </li>
+              <li role="listitem" class="com-cta2 industrial">
+                <a href="#who-benefits">Who we support</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- INTRO -->
+      <section class="home-cleaning">
+        <div class="quality-card">
+          <div class="card-content">
+            <p>Prepared</p>
+            <h2>Light industrial cleaning that works with your operations</h2>
+            <p>
+              We help you keep floors, welfare areas and circulation routes
+              under control without getting in the way of production or
+              warehouse work.
+            </p>
+            <p>
+              Noornest supports <strong>industrial estates</strong>,
+              <strong>trade units</strong>, <strong>logistics hubs</strong> and
+              <strong>after-builders projects</strong> across our regions.
+            </p>
+            <div class="eco-cta">
+              <ul>
+                <li class="eco-cta1"><a href="#">Book a visit</a></li>
+                <li class="eco-cta2">
+                  <a href="#journey"
+                    >See how we work
+                    <i aria-hidden="true" class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <img
+            src="./images/industrial.jpg"
+            alt="Clean industrial or warehouse environment"
+          />
+        </div>
+      </section>
+
+      <!-- WHO BENEFITS -->
+      <section
+        class="workspace-cleaning flexible who-benefits"
+        id="who-benefits"
+        aria-labelledby="industrial-who-heading"
+      >
+        <div class="workspace-heading">
+          <p>Fit</p>
+          <h2 id="industrial-who-heading">
+            Who our industrial &amp; specialist cleaning is for
+          </h2>
+          <p>
+            We adapt to different operational environments with clear method
+            statements and agreed access rules.
+          </p>
+        </div>
+
+        <div class="workspace-cards">
+          <div class="workspace-card flexible">
+            <span><img src="./images/icons/RAKE.svg" alt="icon" /></span>
+            <h3>Light industrial units</h3>
+            <p>
+              Production, assembly and trade units that need floors, welfare
+              areas and circulation routes kept under control.
+            </p>
+          </div>
+
+          <div class="workspace-card flexible">
+            <span><img src="./images/icons/RAKE.svg" alt="icon" /></span>
+            <h3>Warehouses &amp; logistics hubs</h3>
+            <p>
+              Storage and distribution sites with racking, walkways and loading
+              zones that require regular attention.
+            </p>
+          </div>
+
+          <div class="workspace-card flexible">
+            <span><img src="./images/icons/event.svg" alt="icon" /></span>
+            <h3>Workshops &amp; trade counters</h3>
+            <p>
+              Cleaner, safer working environments for engineers, technicians and
+              customers.
+            </p>
+          </div>
+
+          <div class="workspace-card flexible">
+            <span
+              ><img src="./images/icons/communication.svg" alt="icon"
+            /></span>
+            <h3>After-builders &amp; post-refurb</h3>
+            <p>
+              Cleaning projects that bring new-build and refurbished units up to
+              handover standard.
+            </p>
+          </div>
+        </div>
+
+        <div class="eco-cta">
+          <ul>
+            <li class="eco-cta1"><a href="#">Talk about your site</a></li>
+            <li class="eco-cta2">
+              <a href="#plans"
+                >View schedule options
+                <i aria-hidden="true" class="fa-solid fa-chevron-right"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- WHAT WE CLEAN -->
+      <section
+        class="add-on-services clean"
+        data-aos="zoom-in"
+        aria-labelledby="industrial-coverage-heading"
+      >
+        <div class="add-on-header">
+          <div>
+            <p>Coverage</p>
+            <h2 id="industrial-coverage-heading">
+              Industrial cleaning focused on safety, access and control
+            </h2>
+            <p>
+              We design routines around the areas that matter most for safety,
+              efficiency and compliance.
+            </p>
+          </div>
+        </div>
+        <div class="add-on-cards">
+          <div class="add-on-card">
+            <span><img src="./images/icons/floor.svg" alt="icon" /></span>
+            <h3>Floors &amp; walkways</h3>
+            <p>
+              Sweeping, machine-assisted cleaning where appropriate, and
+              attention to marked walkways and crossings.
+            </p>
+          </div>
+          <div class="add-on-card">
+            <span><img src="./images/icons/recycling.svg" alt="icon" /></span>
+            <h3>Waste &amp; welfare areas</h3>
+            <p>
+              Welfare zones, locker rooms and bin stations kept cleaner and more
+              organised.
+            </p>
+          </div>
+          <div class="add-on-card">
+            <span><img src="./images/icons/switches.svg" alt="icon" /></span>
+            <h3>High-touch &amp; control points</h3>
+            <p>
+              Door handles, switches and shared equipment areas cleaned in line
+              with site rules.
+            </p>
+          </div>
+          <div class="add-on-card">
+            <span><img src="./images/icons/tools_level.svg" alt="icon" /></span>
+            <h3>Perimeters &amp; racking bases</h3>
+            <p>
+              Light cleaning around racking bases and equipment perimeters where
+              access is safe and agreed.
+            </p>
+          </div>
+        </div>
+        <div class="eco-cta">
+          <ul>
+            <li class="eco-cta1 clean"><a href="#">Request a checklist</a></li>
+            <li class="eco-cta2 clean">
+              <a href="#journey"
+                >See our process
+                <i aria-hidden="true" class="fa-solid fa-chevron-right"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- PLANS -->
+      <section
+        class="workspace-cleaning flexible cleaning-plans"
+        id="plans"
+        aria-labelledby="industrial-plans-heading"
+      >
+        <div class="workspace-heading">
+          <p>Rhythm</p>
+          <h2 id="industrial-plans-heading">
+            Cleaning plans aligned with your shifts and shutdowns
+          </h2>
+          <p>
+            We work around production schedules, shift patterns and delivery
+            windows.
+          </p>
+        </div>
+
+        <div class="workspace-cards">
+          <div class="workspace-card flexible">
+            <span><img src="./images/icons/RAKE.svg" alt="icon" /></span>
+            <h3>Daily or multi-day cleaning</h3>
+            <p>For sites with constant traffic and safety-critical walkways.</p>
+          </div>
+
+          <div class="workspace-card flexible">
+            <span><img src="./images/icons/balance.svg" alt="icon" /></span>
+            <h3>Weekly or bi-weekly</h3>
+            <p>Suitable for smaller units or lower-footfall operations.</p>
+          </div>
+
+          <div class="workspace-card flexible">
+            <span><img src="./images/icons/refresh.svg" alt="icon" /></span>
+            <h3>Periodic deep cleaning</h3>
+            <p>
+              Reset sessions that tackle built-up grime and harder-to-reach
+              areas.
+            </p>
+          </div>
+
+          <div class="workspace-card flexible">
+            <span><img src="./images/icons/event.svg" alt="icon" /></span>
+            <h3>Shutdown &amp; project cleans</h3>
+            <p>
+              Intensive cleaning during planned downtime, fit-outs or
+              post-refurb works.
+            </p>
+          </div>
+        </div>
+
+        <div class="eco-cta">
+          <ul>
+            <li class="eco-cta1"><a href="#">Discuss options</a></li>
+            <li class="eco-cta2">
+              <a href="#journey"
+                >How onboarding works
+                <i aria-hidden="true" class="fa-solid fa-chevron-right"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- JOURNEY -->
+      <section
+        class="cleaning-process journey"
+        id="journey"
+        aria-labelledby="industrial-journey-heading"
+      >
+        <div class="process-heading">
+          <p>Structured</p>
+          <h2 id="industrial-journey-heading">
+            From initial survey to safe, steady industrial cleaning
+          </h2>
+          <p>
+            We take time to understand your site, rules and risk controls before
+            we start.
+          </p>
+        </div>
+        <div class="process-cards">
+          <div class="why-choose-card">
+            <span><img src="./images/icons/details.svg" alt="icon" /></span>
+            <h3>1. Site assessment</h3>
+            <p>
+              We visit your premises, discuss operations and identify areas
+              where cleaning is required.
+            </p>
+          </div>
+          <div class="why-choose-card grid-item">
+            <img
+              src="./images/Untitled design (2).png"
+              alt="Industrial cleaning team at work"
+            />
+          </div>
+          <div class="why-choose-card">
+            <span><img src="./images/icons/checklist.svg" alt="icon" /></span>
+            <h3>2. Method &amp; schedule</h3>
+            <p>
+              We agree a clear cleaning specification, schedule and safe working
+              approach.
+            </p>
+          </div>
+          <div class="why-choose-card">
+            <span><img src="./images/icons/RAKE.svg" alt="icon" /></span>
+            <h3>3. Trial &amp; adjustment</h3>
+            <p>
+              Early visits are monitored to ensure the plan works alongside your
+              operations.
+            </p>
+          </div>
+          <div class="why-choose-card">
+            <span><img src="./images/icons/relax.svg" alt="icon" /></span>
+            <h3>4. Ongoing routine</h3>
+            <p>
+              Once dialled in, we continue with a reliable routine backed by
+              regular feedback.
+            </p>
+          </div>
+        </div>
+        <div class="why-choose-cta">
+          <ul role="list">
+            <li class="why-choose-cta1" role="listitem">
+              <a href="#">Start with a survey</a>
+            </li>
+            <li class="why-choose-cta2" role="listitem">
+              <a href="#industrial-faqs"
+                >Read FAQs
+                <i aria-hidden="true" class="fa-solid fa-chevron-right"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- HEALTH & SAFETY -->
+      <section class="health-safety">
+        <div class="health-safety-header">
+          <p>Safe</p>
+          <h2>Health &amp; safety in industrial environments</h2>
+          <p>
+            We respect your site rules, PPE expectations and permit-to-work
+            processes.
+          </p>
+        </div>
+        <div class="safety-container">
+          <div class="top-safety-card">
+            <div class="card-content">
+              <p>Shield</p>
+              <h2>Working safely around plant &amp; equipment</h2>
+              <p>
+                We avoid unauthorised work near live plant and only operate
+                within agreed zones and methods.
+              </p>
+              <div class="eco-cta">
+                <ul>
+                  <li class="eco-cta1"><a href="#">Our safety approach</a></li>
+                  <li class="eco-cta2">
+                    <a href="./contact.html"
+                      >Talk to operations
+                      <i
+                        aria-hidden="true"
+                        class="fa-solid fa-chevron-right"
+                      ></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <img src="./images/protecting.jpg" alt="Industrial safety image" />
+          </div>
+          <div class="bottom-right-card">
+            <div class="card-content">
+              <p>Guard</p>
+              <h2>Documentation &amp; communication</h2>
+              <p>
+                We can support your requirements for RAMS, inductions and
+                communication with site managers.
+              </p>
+              <div class="eco-cta">
+                <ul>
+                  <li class="eco-cta1"><a href="#">See what we cover</a></li>
+                  <li class="eco-cta2">
+                    <a href="#industrial-faqs"
+                      >View common questions
+                      <i
+                        aria-hidden="true"
+                        class="fa-solid fa-chevron-right"
+                      ></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <img
+              src="./images/ourcommitment.jpg"
+              alt="Team reviewing documents"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- LOCATIONS -->
+      <section class="locations">
+        <div class="location-heading">
+          <p>Reach</p>
+          <h2>Industrial &amp; specialist cleaning across our regions</h2>
+          <p>Supporting industrial and logistics sites in key locations.</p>
+        </div>
+        <div class="location-cards">
+          <div class="location-card reach">
+            <img src="./images/Placeholder Image4.png" alt="London" />
+            <h3>London</h3>
+            <p>Industrial estates and trade units across Greater London.</p>
+            <div class="mini-cta areas">
+              <a href="#"
+                >Explore coverage
+                <i aria-hidden="true" class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="location-card reach">
+            <img
+              src="./images/Placeholder Image5.png"
+              alt="Greater Manchester"
+            />
+            <h3>Greater Manchester</h3>
+            <p>Warehouses, trade parks and workshops across the region.</p>
+            <div class="mini-cta areas">
+              <a href="#"
+                >View service map
+                <i aria-hidden="true" class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="location-card reach">
+            <img src="./images/berkshire.jpg" alt="Berkshire" />
+            <h3>Berkshire</h3>
+            <p>Light industrial units and estates throughout the county.</p>
+            <div class="mini-cta areas">
+              <a href="#"
+                >View Berkshire coverage
+                <i aria-hidden="true" class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQS -->
+      <section
+        class="faqs commercial industrial"
+        id="industrial-faqs"
+        aria-labelledby="industrial-faqs-heading"
+      >
+        <div class="faq-header">
+          <h2 id="industrial-faqs-heading">
+            Industrial &amp; specialist cleaning – FAQs
+          </h2>
+          <p>
+            Answers to common questions from site managers and operations teams.
+          </p>
+        </div>
+        <div class="faq-cards">
+          <div class="faq-card">
+            <span><img src="./images/icons/security.svg" alt="icon" /></span>
+            <h3>Do you provide RAMS and proof of insurance?</h3>
+            <p>
+              Yes. We can provide risk awareness, method documentation and
+              insurance details on request.
+            </p>
+          </div>
+          <div class="faq-card">
+            <span
+              ><img src="./images/icons/household_supplies.svg" alt="icon"
+            /></span>
+            <h3>What cleaning chemicals do you use?</h3>
+            <p>
+              We select products appropriate to industrial environments and can
+              align with your COSHH controls.
+            </p>
+          </div>
+          <div class="faq-card">
+            <span
+              ><img src="./images/icons/cancel_schedule_send.svg" alt="icon"
+            /></span>
+            <h3>Can you work during shutdown periods only?</h3>
+            <p>
+              Yes. We can provide project-based cleaning during planned
+              shutdowns or refits.
+            </p>
+          </div>
+          <div class="faq-card">
+            <span><img src="./images/icons/tools_level.svg" alt="icon" /></span>
+            <h3>Do you handle hazardous or biohazard cleaning?</h3>
+            <p>
+              No. Hazardous and biohazard cleaning sits outside our standard
+              service and requires specialists.
+            </p>
+          </div>
+          <div class="faq-card">
+            <span><img src="./images/icons/RAKE.svg" alt="icon" /></span>
+            <h3>Can you coordinate with our in-house teams?</h3>
+            <p>
+              We often work alongside existing caretaking or maintenance teams
+              to avoid duplication.
+            </p>
+          </div>
+          <div class="faq-card">
+            <span><img src="./images/icons/help.svg" alt="icon" /></span>
+            <h3>Not sure if your site fits?</h3>
+            <p>
+              Share a few details and we’ll confirm whether our light industrial
+              service is appropriate.
+            </p>
+          </div>
+        </div>
+        <div class="faq-questions">
+          <h3>Talk to Noornest</h3>
+          <p>We can discuss your site and build a safe, sensible plan.</p>
+          <div class="why-choose-cta1">
+            <a href="./contact.html">Contact operations</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA -->
+      <section class="experience">
+        <div class="exp-header">
+          <h2>Ready to plan industrial &amp; specialist cleaning?</h2>
+          <p>
+            Arrange a site survey with Noornest and we’ll design a cleaning
+            routine that respects your operations and safety standards.
+          </p>
+          <div class="experience-cta">
+            <ul role="list" class="cta-hero">
+              <li role="listitem" class="hero-cta2">
+                <a href="#">Request a site visit</a>
+              </li>
+              <li role="listitem" class="hero-cta1">
+                <a href="#">Get a tailored quote</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="exp-image">
+          <img
+            src="./images/Noornest Cleaning Services.png"
+            alt="Industrial cleaning"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-top">
+        <div class="footer-content">
+          <img src="./images/logo2.png" alt="logo" class="footer-logo" />
+          <div class="footer-contact">
+            <p>Noornest<br />London, United Kingdom</p>
+            <br />
+            <p>Contact</p>
+            <a href="tel:+4402012345678">+44 (0)20 1234 5678</a>
+            <a href="mailto:hello@noornestcleaning.co.uk"
+              >hello@noornestcleaning.co.uk</a
+            >
+          </div>
+          <ul class="quick-links1" role="list">
+            <li role="listitem"><a href="/services.html">Our services</a></li>
+            <li role="listitem"><a href="#">Book cleaning</a></li>
+            <li role="listitem"><a href="#">Areas covered</a></li>
+            <li role="listitem"><a href="/aboutus.html">About us</a></li>
+          </ul>
+          <ul class="quick-links2" role="list">
+            <li role="listitem"><a href="#">Customer reviews</a></li>
+            <li role="listitem"><a href="#">FAQ</a></li>
+            <li role="listitem"><a href="#">Careers</a></li>
+            <li role="listitem"><a href="#">Support</a></li>
+          </ul>
+
+          <div>
+            <p>Trademark/Insured by:</p>
+            <a href="https://www.checkatrade.com/">
+          <img src="/images/check-a-trade.webp" alt="check a trade logo"  class="cat-logo" /></a></div>
+        </div>
+        <div class="footer-socials">
+          <ul class="socials" role="list">
+            <li role="listitem">
+              <a href="#"
+                ><i aria-hidden="true" class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li role="listitem" class="instagram">
+              <a href="#"
+                ><i aria-hidden="true" class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li role="listitem" class="twitter">
+              <a href="#"
+                ><i aria-hidden="true" class="fa-brands fa-x-twitter"></i
+              ></a>
+            </li>
+            <li role="listitem">
+              <a href="#"
+                ><i aria-hidden="true" class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li role="listitem" class="youtube">
+              <a href="#"
+                ><i aria-hidden="true" class="fa-brands fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; 2025 Noornest Cleaning Services. All rights reserved.</p>
+        <ul class="copyright-links" role="list">
+          <li role="listitem"><a href="#">Privacy policy</a></li>
+          <li role="listitem"><a href="#">Terms of service</a></li>
+          <li role="listitem"><a href="#">Cookie settings</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/dist/boxicons.js"
+      integrity="sha512-kWH92pHUC/rcjpSMu19lT+H6TlZwZCAftg9AuSw+AVYSdEKSlXXB8o6g12mg5f+Pj5xO40A7ju2ot/VdodCthw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

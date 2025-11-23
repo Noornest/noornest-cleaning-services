@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/redketchup/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/redketchup/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/redketchup/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/redketchup/site.webmanifest" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
+    <meta
+      name="description"
+      content="Request a free, no-obligation cleaning quote from Noornest for homes, offices, rental properties and industrial spaces across London, Greater Manchester and Berkshire."
+    />
+    <meta
+      name="keywords"
+      content="free cleaning quote, cleaning estimate, book cleaners London, book cleaners Manchester, office cleaning quote, end of tenancy quote, industrial cleaning quote, Noornest"
+    />
+    <link
+      rel="canonical"
+      href="https://www.noornestcleaning.co.uk/quote.html"
+    />
+
+    <meta name="author" content="Noornest Cleaning Services" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://www.noornestcleaning.co.uk/residential.html"
+    />
+    <meta
+      property="og:title"
+      content="Residential & Domestic Cleaning | Noornest Cleaning Services"
+    />
+    <meta
+      property="og:description"
+      content="Fresh Nest, Deep Nest, New Nest and Reset Clean – tailored residential cleaning services for homes and flats across London, Greater Manchester and Berkshire."
+    />
+    <meta
+      property="og:image"
+      content="https://www.noornestcleaning.co.uk/images/og-image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://www.noornestcleaning.co.uk/residential.html"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Noornest | Free Cleaning Quote</title>
+  </head>
+  <body>
+    <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+    <header>
+      <div class="logo-nav">
+        <a href="./index.html" class="logo">
+          <img src="./images/logo.png" alt="Noornest Cleaning Services logo" />
+        </a>
+
+        <nav role="navigation" aria-label="Main navigation">
+          <ul class="nav-links" role="list">
+            <li role="listitem">
+              <a href="./index.html">Home</a>
+            </li>
+
+            <li role="listitem">
+              <a href="./aboutus.html">About Us</a>
+            </li>
+
+            <li
+              role="listitem"
+              class="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <a class="dropdown-link" href="./services.html"
+                >Services
+                <i aria-hidden="true" class="fa-solid fa-chevron-down"></i
+              ></a>
+
+              <ul role="list" class="dropdown-content">
+                <!-- <li class="dropdown-menu" role="listitem">
+                  <a href="./services.html">Our Services</a>
+                </li> -->
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./residential-cleaning-service.html"
+                    >Home & Personal Cleaning</a
+                  >
+                </li>
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./offices-workplaces-cleaning-service.html"
+                    >Offices & Workplaces Cleaning</a
+                  >
+                </li>
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./retail-clinics-schools-cleaning-service.html"
+                    >Retail, Clinics & Schools</a
+                  >
+                </li>
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./industrial-cleaning-service.html"
+                    >Industrial & Specialist</a
+                  >
+                </li>
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./properties-cleaning-service.html"
+                    >Property & Real Estate</a
+                  >
+                </li>
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./cleaning-service-addOns.html">Add-On Services </a>
+                </li>
+              </ul>
+            </li>
+
+            <li role="listitem">
+              <a href="./contact.html">Contact Us</a>
+            </li>
+
+            <li role="listitem">
+              <a href="./career.html">Career</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="cta-menu">
+        <ul role="list" class="cta-header">
+          <li class="cta1" role="listitem"><a href="contact.html">Book a Clean</a></li>
+          <li class="cta2" role="listitem"><a href="free-quote.html">Get a Free Quote</a></li>
+          <li class="cta2 cta3" role="listitem"><a href="free-quote.html">Get a Quote</a></li>
+        </ul>
+        <button
+          type="button"
+          onclick="toggleMenu()"
+          class="hamburger"
+          aria-label="Toggle navigation menu"
+        >
+          <i aria-hidden="true" class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <main id="mainContent">
+      <!-- HERO: FREE QUOTE -->
+      <section class="commercial-hero quote">
+        <div class="commercial-hero-text free-quote-text">
+          <p>Free &amp; no obligation</p>
+          <h1><span>Request your free</span> cleaning quote</h1>
+          <p>
+            Tell us a little about your space and we’ll send a tailored quote
+            for your home, workplace or property within one working day.
+          </p>
+          <div class="cta-menu">
+            <ul role="list" class="cta-header">
+              <li role="listitem" class="cta1">
+                <a href="#quote-form">Start my quote</a>
+              </li>
+              <li role="listitem" class="cta2">
+                <a href="./contact.html">Speak to the team</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUICK REASSURANCE / HIGHLIGHTS -->
+      <section
+        class="workspace-cleaning flexible cleaning-plans quote-highlights"
+      >
+        <div class="workspace-heading">
+          <p>Simple</p>
+          <h2>What to expect from a Noornest quote</h2>
+          <p>
+            Clear, tailored pricing – never rushed estimates. Your quote
+            reflects your space, schedule and preferred services.
+          </p>
+        </div>
+
+        <div class="workspace-cards">
+          <div class="workspace-card flexible">
+            <span><img src="./images/icons/checklist.svg" alt="icon" /></span>
+            <h3>Tailored to your space</h3>
+            <p>
+              We look at property type, size, frequency and any specialist areas
+              before sending your quote.
+            </p>
+          </div>
+
+          <div class="workspace-card flexible">
+            <span><img src="./images/icons/balance.svg" alt="icon" /></span>
+            <h3>No obligation &amp; transparent</h3>
+            <p>
+              No hidden extras – you’ll see exactly what’s included and can
+              adjust as needed.
+            </p>
+          </div>
+
+          <div class="workspace-card flexible">
+            <span><img src="./images/icons/refresh.svg" alt="icon" /></span>
+            <h3>Response within one working day</h3>
+            <p>
+              Our team aims to respond to all quote requests within one UK
+              working day.
+            </p>
+          </div>
+
+          <div class="workspace-card flexible">
+            <span
+              ><img src="./images/icons/communication.svg" alt="icon"
+            /></span>
+            <h3>Human review, not auto-pricing</h3>
+            <p>
+              Every quote is checked by a real person who understands cleaning
+              and property.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUOTE FORM SECTION -->
+      <section
+        class="quote-section"
+        id="quote-form"
+        aria-labelledby="quote-form-heading"
+      >
+        <div class="quote-inner">
+          <div class="quote-header">
+            <p>Details</p>
+            <h2 id="quote-form-heading">Tell us about your clean</h2>
+            <p>
+              The more detail you share, the more accurate your quote will be.
+              Fields marked with <span aria-hidden="true">*</span> are required.
+            </p>
+          </div>
+
+          <div class="quote-form-layout">
+            <!-- FORM -->
+            <form
+              class="quote-form"
+              action="#"
+              method="post"
+              novalidate
+              aria-describedby="quote-privacy-note"
+            >
+              <!-- WHO YOU ARE -->
+              <fieldset class="quote-fieldset">
+                <legend>About you</legend>
+
+                <div class="quote-field">
+                  <label for="fullName">Full name <span>*</span></label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    autocomplete="name"
+                    required
+                  />
+                </div>
+
+                <div class="quote-grid-2">
+                  <div class="quote-field">
+                    <label for="email">Email address <span>*</span></label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      autocomplete="email"
+                      required
+                    />
+                  </div>
+
+                  <div class="quote-field">
+                    <label for="phone">Phone number</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      autocomplete="tel"
+                      placeholder="+44..."
+                    />
+                  </div>
+                </div>
+
+                <div class="quote-field">
+                  <label for="enquiryType"
+                    >I’m enquiring as a... <span>*</span></label
+                  >
+                  <select id="enquiryType" name="enquiryType" required>
+                    <option value="">Please select</option>
+                    <option value="homeowner">Homeowner / tenant</option>
+                    <option value="business">Business / office manager</option>
+                    <option value="landlord">
+                      Landlord / agent / developer
+                    </option>
+                    <option value="host">Airbnb / short-let host</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <!-- SERVICE CATEGORY -->
+              <fieldset class="quote-fieldset">
+                <legend>Service type</legend>
+
+                <div class="quote-field">
+                  <label for="serviceCategory"
+                    >What do you need help with? <span>*</span></label
+                  >
+                  <select id="serviceCategory" name="serviceCategory" required>
+                    <option value="">Please select</option>
+                    <option value="residential">
+                      Residential / home cleaning
+                    </option>
+                    <option value="office">Offices &amp; workplaces</option>
+                    <option value="retail">
+                      Retail, clinics &amp; schools
+                    </option>
+                    <option value="industrial">
+                      Industrial &amp; specialist cleaning
+                    </option>
+                    <option value="property">
+                      Property &amp; real estate (end-of-tenancy, Airbnb,
+                      blocks)
+                    </option>
+                    <option value="addons">
+                      Add-on services (carpets, oven, windows etc.)
+                    </option>
+                  </select>
+                </div>
+
+                <div class="quote-grid-2">
+                  <div class="quote-field">
+                    <label for="location">Service area <span>*</span></label>
+                    <select id="location" name="location" required>
+                      <option value="">Select area</option>
+                      <option value="london">London</option>
+                      <option value="manchester">Greater Manchester</option>
+                      <option value="berkshire">Berkshire</option>
+                      <option value="other">
+                        Other UK area (we’ll confirm availability)
+                      </option>
+                    </select>
+                  </div>
+
+                  <div class="quote-field">
+                    <label for="postcode">Postcode (or nearest area)</label>
+                    <input
+                      type="text"
+                      id="postcode"
+                      name="postcode"
+                      autocomplete="postal-code"
+                    />
+                  </div>
+                </div>
+
+                <div class="quote-grid-2">
+                  <div class="quote-field">
+                    <label for="propertyType">Property / site type</label>
+                    <input
+                      type="text"
+                      id="propertyType"
+                      name="propertyType"
+                      placeholder="E.g. 2-bed flat, 3-floor office, HMO, warehouse"
+                    />
+                  </div>
+                  <div class="quote-field">
+                    <label for="size">Approximate size</label>
+                    <input
+                      type="text"
+                      id="size"
+                      name="size"
+                      placeholder="E.g. 2 bedrooms, 150 m², 3 floors"
+                    />
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- FREQUENCY & TIMING -->
+              <fieldset class="quote-fieldset">
+                <legend>Timing &amp; frequency</legend>
+
+                <div class="quote-grid-2">
+                  <div class="quote-field">
+                    <label for="frequency"
+                      >How often do you need cleaning? <span>*</span></label
+                    >
+                    <select id="frequency" name="frequency" required>
+                      <option value="">Please select</option>
+                      <option value="oneoff">One-off / deep clean</option>
+                      <option value="weekly">Weekly</option>
+                      <option value="fortnightly">Bi-weekly</option>
+                      <option value="monthly">Monthly</option>
+                      <option value="adhoc">Ad hoc / project-based</option>
+                      <option value="unsure">Not sure yet</option>
+                    </select>
+                  </div>
+
+                  <div class="quote-field">
+                    <label for="preferredDays">Preferred days / times</label>
+                    <input
+                      type="text"
+                      id="preferredDays"
+                      name="preferredDays"
+                      placeholder="E.g. weekday mornings, evenings, weekends"
+                    />
+                  </div>
+                </div>
+
+                <div class="quote-field">
+                  <label for="startDate">Ideal start date</label>
+                  <input type="date" id="startDate" name="startDate" />
+                </div>
+              </fieldset>
+
+              <!-- ADD-ONS & NOTES -->
+              <fieldset class="quote-fieldset">
+                <legend>Extras &amp; notes</legend>
+
+                <div class="quote-field">
+                  <p class="quote-label-inline">Optional add-ons:</p>
+                  <div class="quote-checkbox-grid">
+                    <label class="quote-checkbox">
+                      <input type="checkbox" name="addons" value="oven" />
+                      <span>Oven clean</span>
+                    </label>
+                    <label class="quote-checkbox">
+                      <input type="checkbox" name="addons" value="fridge" />
+                      <span>Fridge / freezer clean</span>
+                    </label>
+                    <label class="quote-checkbox">
+                      <input type="checkbox" name="addons" value="windows" />
+                      <span>Internal windows &amp; glass</span>
+                    </label>
+                    <label class="quote-checkbox">
+                      <input type="checkbox" name="addons" value="carpet" />
+                      <span>Carpet &amp; upholstery</span>
+                    </label>
+                    <label class="quote-checkbox">
+                      <input type="checkbox" name="addons" value="mattress" />
+                      <span>Mattress refresh</span>
+                    </label>
+                    <label class="quote-checkbox">
+                      <input type="checkbox" name="addons" value="laundry" />
+                      <span>Laundry &amp; ironing support</span>
+                    </label>
+                    <label class="quote-checkbox">
+                      <input type="checkbox" name="addons" value="keyholding" />
+                      <span>Key holding (landlords &amp; hosts)</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="quote-field">
+                  <label for="notes">Anything else we should know?</label>
+                  <textarea
+                    id="notes"
+                    name="notes"
+                    rows="4"
+                    placeholder="Access notes, pets, parking, specific rooms or concerns..."
+                  ></textarea>
+                </div>
+              </fieldset>
+
+              <!-- CONSENT & SUBMIT -->
+              <div class="quote-consent">
+                <div class="quote-field">
+                  <label class="quote-checkbox">
+                    <input
+                      type="checkbox"
+                      name="marketingConsent"
+                      value="yes"
+                    />
+                    <span>
+                      I’m happy for Noornest to contact me about this quote and
+                      related services.
+                    </span>
+                  </label>
+                </div>
+                <p id="quote-privacy-note" class="quote-privacy">
+                  We use your details only to respond to your enquiry. For more
+                  information, please see our <a href="#">privacy policy</a>.
+                </p>
+              </div>
+
+              <div class="quote-actions">
+                <button type="submit" class="primary-btn">
+                  Request my free quote
+                </button>
+                <p class="quote-small">
+                  Typically answered within one UK working day.
+                </p>
+              </div>
+            </form>
+
+            <!-- SIDE PANEL / WHAT HAPPENS NEXT -->
+            <aside
+              class="quote-aside"
+              aria-label="What happens after you request a quote"
+            >
+              <div class="quote-aside-card">
+                <p>What happens next</p>
+                <h3>Your quote in three simple steps</h3>
+                <ol class="quote-steps">
+                  <li>
+                    <strong>1. We review your details</strong>
+                    <span>
+                      A member of the Noornest team checks your information and
+                      may contact you if anything needs clarifying.
+                    </span>
+                  </li>
+                  <li>
+                    <strong>2. You receive your quote</strong>
+                    <span>
+                      We send a clear, itemised quote by email – usually within
+                      one working day.
+                    </span>
+                  </li>
+                  <li>
+                    <strong>3. Book when you’re ready</strong>
+                    <span>
+                      If you’re happy, we agree dates, access and any add-ons
+                      before your first clean.
+                    </span>
+                  </li>
+                </ol>
+              </div>
+
+              <div class="quote-aside-card">
+                <p>Coverage</p>
+                <h3>Where we currently operate</h3>
+                <ul class="quote-coverage-list">
+                  <li>London</li>
+                  <li>Greater Manchester</li>
+                  <li>Berkshire</li>
+                </ul>
+                <p>
+                  Outside these areas? Select “Other UK area” and we’ll confirm
+                  whether we can help.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- SHORT FAQ FOR QUOTES -->
+      <section class="faqs commercial quote-faqs">
+        <div class="faq-header">
+          <h2>Free quote – FAQs</h2>
+          <p>
+            Questions we often receive when people request a quote from
+            Noornest.
+          </p>
+        </div>
+        <div class="faq-cards">
+          <div class="faq-card">
+            <span><img src="./images/icons/help.svg" alt="icon" /></span>
+            <h3>Is my quote really free?</h3>
+            <p>
+              Yes. Your quote is completely free and there is no obligation to
+              book a service with us.
+            </p>
+          </div>
+          <div class="faq-card">
+            <span
+              ><img src="./images/icons/cancel_schedule_send.svg" alt="icon"
+            /></span>
+            <h3>How quickly will I hear back?</h3>
+            <p>
+              We aim to respond to all quote requests within one UK working day,
+              and often sooner.
+            </p>
+          </div>
+          <div class="faq-card">
+            <span
+              ><img src="./images/icons/household_supplies.svg" alt="icon"
+            /></span>
+            <h3>Do you need to visit before quoting?</h3>
+            <p>
+              For many homes and smaller offices we can quote from your
+              description. For larger or more complex sites, we may suggest a
+              short visit or video call.
+            </p>
+          </div>
+          <div class="faq-card">
+            <span
+              ><img src="./images/icons/security_key.svg" alt="icon"
+            /></span>
+            <h3>Will you share my details with anyone?</h3>
+            <p>
+              No. We only use your information to manage your enquiry, in line
+              with our privacy policy.
+            </p>
+          </div>
+          <div class="faq-card">
+            <span><img src="./images/icons/RAKE.svg" alt="icon" /></span>
+            <h3>Can I request multiple properties?</h3>
+            <p>
+              Yes – just mention this in the notes section and we’ll respond
+              with options for each address.
+            </p>
+          </div>
+          <div class="faq-card">
+            <span
+              ><img src="./images/icons/communication.svg" alt="icon"
+            /></span>
+            <h3>Prefer to talk instead?</h3>
+            <p>
+              Use our <a href="./contact.html">contact page</a> or call the
+              number in the footer to speak directly with our team.
+            </p>
+          </div>
+        </div>
+        <div class="faq-questions">
+          <h3>Still unsure?</h3>
+          <p>We’re happy to walk you through the process step by step.</p>
+          <div class="why-choose-cta1">
+            <a href="./contact.html">Contact Noornest</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA -->
+      <section class="experience">
+        <div class="exp-header">
+          <h2>Ready for a tailored Noornest quote?</h2>
+          <p>
+            Share a few details about your home, workplace or property, and
+            we’ll do the rest.
+          </p>
+          <div class="experience-cta">
+            <ul role="list" class="cta-hero">
+              <li role="listitem" class="hero-cta2">
+                <a href="#quote-form">Start my quote</a>
+              </li>
+              <li role="listitem" class="hero-cta1">
+                <a href="./services.html">Explore all services</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="exp-image">
+          <img
+            src="./images/Noornest Cleaning Services.png"
+            alt="Noornest cleaning team"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-top">
+        <div class="footer-content">
+          <img src="./images/logo2.png" alt="logo" class="footer-logo" />
+          <div class="footer-contact">
+            <p>Noornest<br />London, United Kingdom</p>
+            <br />
+            <p>Contact</p>
+            <a href="tel:+4402012345678">+44 (0)20 1234 5678</a>
+            <a href="mailto:hello@noornestcleaning.co.uk"
+              >hello@noornestcleaning.co.uk</a
+            >
+          </div>
+          <ul class="quick-links1" role="list">
+            <li role="listitem"><a href="/services.html">Our services</a></li>
+            <li role="listitem"><a href="#">Book cleaning</a></li>
+            <li role="listitem"><a href="#">Areas covered</a></li>
+            <li role="listitem"><a href="/aboutus.html">About us</a></li>
+          </ul>
+          <ul class="quick-links2" role="list">
+            <li role="listitem"><a href="#">Customer reviews</a></li>
+            <li role="listitem"><a href="#">FAQ</a></li>
+            <li role="listitem"><a href="#">Careers</a></li>
+            <li role="listitem"><a href="#">Support</a></li>
+          </ul>
+
+          <div>
+            <p>Trademark/Insured by:</p>
+            <a href="https://www.checkatrade.com/">
+          <img src="/images/check-a-trade.webp" alt="check a trade logo"  class="cat-logo" /></a></div>
+        </div>
+        <div class="footer-socials">
+          <ul class="socials" role="list">
+            <li role="listitem">
+              <a href="#"
+                ><i aria-hidden="true" class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li role="listitem" class="instagram">
+              <a href="#"
+                ><i aria-hidden="true" class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li role="listitem" class="twitter">
+              <a href="#"
+                ><i aria-hidden="true" class="fa-brands fa-x-twitter"></i
+              ></a>
+            </li>
+            <li role="listitem">
+              <a href="#"
+                ><i aria-hidden="true" class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li role="listitem" class="youtube">
+              <a href="#"
+                ><i aria-hidden="true" class="fa-brands fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; 2025 Noornest Cleaning Services. All rights reserved.</p>
+        <ul class="copyright-links" role="list">
+          <li role="listitem"><a href="#">Privacy policy</a></li>
+          <li role="listitem"><a href="#">Terms of service</a></li>
+          <li role="listitem"><a href="#">Cookie settings</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/dist/boxicons.js"
+      integrity="sha512-kWH92pHUC/rcjpSMu19lT+H6TlZwZCAftg9AuSw+AVYSdEKSlXXB8o6g12mg5f+Pj5xO40A7ju2ot/VdodCthw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

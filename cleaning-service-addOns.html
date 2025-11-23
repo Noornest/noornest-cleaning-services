@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/redketchup/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/redketchup/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/redketchup/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/redketchup/site.webmanifest" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
+    <meta
+      name="description"
+      content="Oven, fridge, carpet, upholstery, mattress and internal window cleaning, plus laundry and key holding add-ons that enhance any Noornest cleaning service."
+    />
+    <meta
+      name="keywords"
+      content="oven cleaning, fridge cleaning, carpet cleaning, upholstery cleaning, mattress cleaning, internal window cleaning, laundry, ironing, key holding, cleaning add-on services, Noornest"
+    />
+    <meta name="author" content="Noornest Cleaning Services" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://www.noornestcleaning.co.uk/residential.html"
+    />
+    <meta
+      property="og:title"
+      content="Residential & Domestic Cleaning | Noornest Cleaning Services"
+    />
+    <meta
+      property="og:description"
+      content="Fresh Nest, Deep Nest, New Nest and Reset Clean – tailored residential cleaning services for homes and flats across London, Greater Manchester and Berkshire."
+    />
+    <meta
+      property="og:image"
+      content="https://www.noornestcleaning.co.uk/images/og-image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://www.noornestcleaning.co.uk/residential.html"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Noornest | Cleaning Add-On Services</title>
+  </head>
+  <body>
+    <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+    <header>
+      <div class="logo-nav">
+        <a href="./index.html" class="logo">
+          <img src="./images/logo.png" alt="Noornest Cleaning Services logo" />
+        </a>
+
+        <nav role="navigation" aria-label="Main navigation">
+          <ul class="nav-links" role="list">
+            <li role="listitem">
+              <a href="./index.html">Home</a>
+            </li>
+
+            <li role="listitem">
+              <a href="./aboutus.html">About Us</a>
+            </li>
+
+            <li
+              role="listitem"
+              class="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <a class="dropdown-link" href="./services.html"
+                >Services
+                <i aria-hidden="true" class="fa-solid fa-chevron-down"></i
+              ></a>
+
+              <ul role="list" class="dropdown-content">
+                <!-- <li class="dropdown-menu" role="listitem">
+                  <a href="./services.html">Our Services</a>
+                </li> -->
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./residential-cleaning-service.html"
+                    >Home & Personal Cleaning</a
+                  >
+                </li>
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./offices-workplaces-cleaning-service.html"
+                    >Offices & Workplaces Cleaning</a
+                  >
+                </li>
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./retail-clinics-schools-cleaning-service.html"
+                    >Retail, Clinics & Schools</a
+                  >
+                </li>
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./industrial-cleaning-service.html"
+                    >Industrial & Specialist</a
+                  >
+                </li>
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./properties-cleaning-service.html"
+                    >Property & Real Estate</a
+                  >
+                </li>
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./cleaning-service-addOns.html">Add-On Services </a>
+                </li>
+              </ul>
+            </li>
+
+            <li role="listitem">
+              <a href="./contact.html">Contact Us</a>
+            </li>
+
+            <li role="listitem">
+              <a href="./career.html">Career</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="cta-menu">
+        <ul role="list" class="cta-header">
+          <li class="cta1" role="listitem"><a href="contact.html">Book a Clean</a></li>
+          <li class="cta2" role="listitem"><a href="free-quote.html">Get a Free Quote</a></li>
+          <li class="cta2 cta3" role="listitem"><a href="free-quote.html">Get a Quote</a></li>
+        </ul>
+        <button
+          type="button"
+          onclick="toggleMenu()"
+          class="hamburger"
+          aria-label="Toggle navigation menu"
+        >
+          <i aria-hidden="true" class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <main id="mainContent">
+      <!-- HERO -->
+      <section class="commercial-hero addons">
+        <div class="commercial-hero-text">
+          <p>Finishing touch</p>
+          <h1><span>Add-on cleaning</span> services that complete the job</h1>
+          <p>
+            From ovens and fridges to carpets and mattresses, Noornest add-ons
+            enhance any residential, commercial or property clean.
+          </p>
+          <div class="commercial-hero-cta">
+            <ul role="list" class="cta-commercial">
+              <li role="listitem" class="com-cta1 addons">
+                <a href="#">View add-on options</a>
+              </li>
+              <li role="listitem" class="com-cta2 addons">
+                <a href="#addons-list">Where they fit in</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- INTRO -->
+      <section class="home-cleaning">
+        <div class="quality-card">
+          <div class="card-content">
+            <p>Extra</p>
+            <h2>Small upgrades that make a big difference</h2>
+            <p>
+              Sometimes a standard clean isn’t quite enough. Our add-on services
+              target the stubborn, high-impact areas that need deeper attention.
+            </p>
+            <p>
+              Add them to a one-off clean, a regular plan or a property handover
+              to get the finish you really want.
+            </p>
+            <div class="eco-cta">
+              <ul>
+                <li class="eco-cta1"><a href="#">Build your package</a></li>
+                <li class="eco-cta2">
+                  <a href="#journey"
+                    >How to add extras
+                    <i aria-hidden="true" class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <img
+            src="./images/oven.jpg"
+            alt="Oven being deep cleaned as an add-on service"
+          />
+        </div>
+      </section>
+
+      <!-- WHEN ADD-ONS HELP MOST -->
+      <section
+        class="workspace-cleaning flexible who-benefits"
+        aria-labelledby="addons-who-heading"
+      >
+        <div class="workspace-heading">
+          <p>Perfect fit</p>
+          <h2 id="addons-who-heading">
+            When add-on services make the most sense
+          </h2>
+          <p>
+            Our extra services are designed to plug into different types of
+            bookings and life moments.
+          </p>
+        </div>
+
+        <div class="workspace-cards">
+          <div class="workspace-card flexible">
+            <span><img src="./images/icons/event.svg" alt="icon" /></span>
+            <h3>End-of-tenancy &amp; move-outs</h3>
+            <p>
+              Add ovens, fridges and internal windows to help meet check-out
+              expectations.
+            </p>
+          </div>
+
+          <div class="workspace-card flexible">
+            <span><img src="./images/icons/family_home.svg" alt="icon" /></span>
+            <h3>Deep seasonal cleans</h3>
+            <p>
+              Combine carpet, upholstery and mattress refreshes with your yearly
+              deep clean.
+            </p>
+          </div>
+
+          <div class="workspace-card flexible">
+            <span><img src="./images/icons/refresh.svg" alt="icon" /></span>
+            <h3>Airbnb &amp; short-let hosting</h3>
+            <p>
+              Use laundry, ironing and key holding to simplify guest turnaround
+              and standards.
+            </p>
+          </div>
+
+          <div class="workspace-card flexible">
+            <span><img src="./images/icons/RAKE.svg" alt="icon" /></span>
+            <h3>Busy households &amp; professionals</h3>
+            <p>
+              When life is full, add specific tasks that you don’t have time to
+              manage yourself.
+            </p>
+          </div>
+        </div>
+
+        <div class="eco-cta">
+          <ul>
+            <li class="eco-cta1"><a href="#">Talk through your needs</a></li>
+            <li class="eco-cta2">
+              <a href="#addons-list"
+                >See full list
+                <i aria-hidden="true" class="fa-solid fa-chevron-right"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ADD-ON LIST -->
+      <section
+        class="add-on-services clean"
+        id="addons-list"
+        data-aos="zoom-in"
+        aria-labelledby="addons-list-heading"
+      >
+        <div class="add-on-header">
+          <div>
+            <p>Extras</p>
+            <h2 id="addons-list-heading">
+              Add-on services you can plug into any clean
+            </h2>
+            <p>
+              Pick one or combine several – our team will confirm what’s
+              achievable within your booking.
+            </p>
+          </div>
+        </div>
+        <div class="add-on-cards">
+          <div class="add-on-card">
+            <span><img src="./images/icons/floor.svg" alt="icon" /></span>
+            <h3>Oven deep clean</h3>
+            <p>
+              Interior and exterior oven cleaning that tackles grease and
+              baked-on residue where access allows.
+            </p>
+          </div>
+          <div class="add-on-card">
+            <span><img src="./images/icons/weekend.svg" alt="icon" /></span>
+            <h3>Fridge / freezer clean</h3>
+            <p>
+              Shelves, drawers and seals cleaned and refreshed, with defrosting
+              where agreed.
+            </p>
+          </div>
+          <div class="add-on-card">
+            <span><img src="./images/icons/window_open.svg" alt="icon" /></span>
+            <h3>Internal windows &amp; glass</h3>
+            <p>
+              Internal panes, doors and glass partitions cleaned to reduce
+              smears and fingerprints.
+            </p>
+          </div>
+          <div class="add-on-card">
+            <span><img src="./images/icons/RAKE.svg" alt="icon" /></span>
+            <h3>Carpet &amp; upholstery cleaning</h3>
+            <p>
+              Extra attention for carpets, sofas and chairs, subject to fabric
+              and access conditions.
+            </p>
+          </div>
+          <div class="add-on-card">
+            <span><img src="./images/icons/refresh.svg" alt="icon" /></span>
+            <h3>Mattress refresh &amp; sanitising</h3>
+            <p>
+              Targeted cleaning to help refresh mattresses and sleeping areas as
+              part of a wider clean.
+            </p>
+          </div>
+          <div class="add-on-card">
+            <span
+              ><img src="./images/icons/dry_cleaning.svg" alt="icon"
+            /></span>
+            <h3>Laundry &amp; ironing support</h3>
+            <p>
+              Support with bed linen and selected laundry tasks, ideal for hosts
+              and busy households.
+            </p>
+          </div>
+          <div class="add-on-card">
+            <span
+              ><img src="./images/icons/security_key.svg" alt="icon"
+            /></span>
+            <h3>Key holding for landlords &amp; hosts</h3>
+            <p>
+              Agreed key-holding procedures that make it easier to manage cleans
+              when you can’t be on-site.
+            </p>
+          </div>
+        </div>
+        <div class="eco-cta">
+          <ul>
+            <li class="eco-cta1 clean">
+              <a href="/contact.html">Ask about availability</a>
+            </li>
+            <li class="eco-cta2 clean">
+              <a href="#journey"
+                >How to add extras
+                <i aria-hidden="true" class="fa-solid fa-chevron-right"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- “HOW OFTEN” / PLANS -->
+      <section
+        class="workspace-cleaning flexible cleaning-plans"
+        aria-labelledby="addons-plans-heading"
+      >
+        <div class="workspace-heading">
+          <p>Rhythm</p>
+          <h2 id="addons-plans-heading">How often should you book add-ons?</h2>
+          <p>
+            The right frequency depends on how you live, host and use each space
+            day to day.
+          </p>
+        </div>
+
+        <div class="workspace-cards">
+          <div class="workspace-card flexible">
+            <span><img src="./images/icons/RAKE.svg" alt="icon" /></span>
+            <h3>Occasional refresh</h3>
+            <p>
+              Add extras once or twice a year, alongside your seasonal deep
+              clean.
+            </p>
+          </div>
+
+          <div class="workspace-card flexible">
+            <span><img src="./images/icons/balance.svg" alt="icon" /></span>
+            <h3>Regular top-ups</h3>
+            <p>
+              Include targeted extras every few visits to keep on top of
+              higher-use areas.
+            </p>
+          </div>
+
+          <div class="workspace-card flexible">
+            <span><img src="./images/icons/refresh.svg" alt="icon" /></span>
+            <h3>High-turnover hosting</h3>
+            <p>
+              For short-let and Airbnb properties, build extras into almost
+              every clean.
+            </p>
+          </div>
+
+          <div class="workspace-card flexible">
+            <span><img src="./images/icons/event.svg" alt="icon" /></span>
+            <h3>Change-of-life moments</h3>
+            <p>
+              Moving home, new baby, renovation – use add-ons to help reset your
+              space.
+            </p>
+          </div>
+        </div>
+
+        <div class="eco-cta">
+          <ul>
+            <li class="eco-cta1"><a href="#">Ask for guidance</a></li>
+            <li class="eco-cta2">
+              <a href="#addons-faqs"
+                >Read FAQs
+                <i aria-hidden="true" class="fa-solid fa-chevron-right"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- HOW TO ADD TO A BOOKING -->
+      <section
+        class="cleaning-process journey"
+        id="journey"
+        aria-labelledby="addons-journey-heading"
+      >
+        <div class="process-heading">
+          <p>Easy</p>
+          <h2 id="addons-journey-heading">
+            How to add extras to your Noornest clean
+          </h2>
+          <p>
+            Add-ons are designed to be simple: choose what you need and we’ll
+            confirm what’s possible within your slot.
+          </p>
+        </div>
+        <div class="process-cards">
+          <div class="why-choose-card">
+            <span><img src="./images/icons/details.svg" alt="icon" /></span>
+            <h3>1. Choose your main service</h3>
+            <p>
+              Start with a residential, commercial, industrial or property
+              cleaning package.
+            </p>
+          </div>
+          <div class="why-choose-card grid-item">
+            <img
+              src="./images/Untitled design (2).png"
+              alt="Cleaning team planning an add-on service"
+            />
+          </div>
+          <div class="why-choose-card">
+            <span><img src="./images/icons/checklist.svg" alt="icon" /></span>
+            <h3>2. Select your add-ons</h3>
+            <p>
+              Tell us which extras you’d like and any special instructions (for
+              example, fabrics or fragile items).
+            </p>
+          </div>
+          <div class="why-choose-card">
+            <span><img src="./images/icons/RAKE.svg" alt="icon" /></span>
+            <h3>3. We confirm what’s included</h3>
+            <p>
+              We’ll confirm what we can realistically complete in the time and
+              whether extra time is recommended.
+            </p>
+          </div>
+          <div class="why-choose-card">
+            <span><img src="./images/icons/relax.svg" alt="icon" /></span>
+            <h3>4. Enjoy the uplift</h3>
+            <p>
+              Once complete, you get the benefit of a clean that feels deeper
+              and more “finished”.
+            </p>
+          </div>
+        </div>
+        <div class="why-choose-cta">
+          <ul role="list">
+            <li class="why-choose-cta1" role="listitem">
+              <a href="#">Start building your booking</a>
+            </li>
+            <li class="why-choose-cta2" role="listitem">
+              <a href="#addons-faqs"
+                >Read add-on FAQs
+                <i aria-hidden="true" class="fa-solid fa-chevron-right"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- FAQS -->
+      <section
+        class="faqs commercial addons"
+        id="addons-faqs"
+        aria-labelledby="addons-faqs-heading"
+      >
+        <div class="faq-header">
+          <h2 id="addons-faqs-heading">Add-on services – FAQs</h2>
+          <p>
+            Everything you might want to know before adding extras to your
+            booking.
+          </p>
+        </div>
+        <div class="faq-cards">
+          <div class="faq-card">
+            <span
+              ><img src="./images/icons/cancel_schedule_send.svg" alt="icon"
+            /></span>
+            <h3>Can I book add-ons on their own?</h3>
+            <p>
+              Most add-ons are designed to sit on top of a main cleaning service
+              – ask the team if you have a special case.
+            </p>
+          </div>
+          <div class="faq-card">
+            <span><img src="./images/icons/tools_level.svg" alt="icon" /></span>
+            <h3>Do add-ons increase the visit time?</h3>
+            <p>
+              Sometimes. We’ll let you know if your chosen extras require
+              additional time and cost.
+            </p>
+          </div>
+          <div class="faq-card">
+            <span
+              ><img src="./images/icons/household_supplies.svg" alt="icon"
+            /></span>
+            <h3>Do you bring specialist equipment?</h3>
+            <p>
+              Where specialist equipment is needed, we’ll confirm what we can
+              provide and what’s included in the price.
+            </p>
+          </div>
+          <div class="faq-card">
+            <span><img src="./images/icons/help.svg" alt="icon" /></span>
+            <h3>Are all extras available in every area?</h3>
+            <p>
+              Availability can vary by region and schedule – we’ll confirm
+              what’s possible when you enquire.
+            </p>
+          </div>
+          <div class="faq-card">
+            <span
+              ><img src="./images/icons/security_key.svg" alt="icon"
+            /></span>
+            <h3>How does key holding work?</h3>
+            <p>
+              We agree secure procedures in advance, including who holds keys
+              and how access is logged.
+            </p>
+          </div>
+          <div class="faq-card">
+            <span><img src="./images/icons/RAKE.svg" alt="icon" /></span>
+            <h3>Not sure which extras you need?</h3>
+            <p>
+              Our team can suggest useful add-ons based on your property, usage
+              and main service type.
+            </p>
+          </div>
+        </div>
+        <div class="faq-questions">
+          <h3>Talk to Noornest</h3>
+          <p>
+            We’ll help you design the right mix of core services and extras.
+          </p>
+          <div class="why-choose-cta1">
+            <a href="./contact.html">Contact us</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA -->
+      <section class="experience">
+        <div class="exp-header">
+          <h2>Ready to upgrade your next clean?</h2>
+          <p>
+            Add ovens, windows, carpets, laundry and more to your Noornest
+            booking for a deeper, more satisfying result.
+          </p>
+          <div class="experience-cta">
+            <ul role="list" class="cta-hero">
+              <li role="listitem" class="hero-cta2">
+                <a href="#">Build a package</a>
+              </li>
+              <li role="listitem" class="hero-cta1">
+                <a href="free-quote.html">Request a quote</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="exp-image">
+          <img
+            src="./images/Noornest Cleaning Services.png"
+            alt="Range of Noornest cleaning services"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-top">
+        <div class="footer-content">
+          <img src="./images/logo2.png" alt="logo" class="footer-logo" />
+          <div class="footer-contact">
+            <p>Noornest<br />London, United Kingdom</p>
+            <br />
+            <p>Contact</p>
+            <a href="tel:+4402012345678">+44 (0)20 1234 5678</a>
+            <a href="mailto:hello@noornestcleaning.co.uk"
+              >hello@noornestcleaning.co.uk</a
+            >
+          </div>
+          <ul class="quick-links1" role="list">
+            <li role="listitem"><a href="/services.html">Our services</a></li>
+            <li role="listitem"><a href="#">Book cleaning</a></li>
+            <li role="listitem"><a href="#">Areas covered</a></li>
+            <li role="listitem"><a href="/aboutus.html">About us</a></li>
+          </ul>
+          <ul class="quick-links2" role="list">
+            <li role="listitem"><a href="#">Customer reviews</a></li>
+            <li role="listitem"><a href="#">FAQ</a></li>
+            <li role="listitem"><a href="#">Careers</a></li>
+            <li role="listitem"><a href="#">Support</a></li>
+          </ul>
+
+          <div>
+            <p>Trademark/Insured by:</p>
+            <a href="https://www.checkatrade.com/">
+          <img src="/images/check-a-trade.webp" alt="check a trade logo"  class="cat-logo" /></a></div>
+        </div>
+        <div class="footer-socials">
+          <ul class="socials" role="list">
+            <li role="listitem">
+              <a href="#"
+                ><i aria-hidden="true" class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li role="listitem" class="instagram">
+              <a href="#"
+                ><i aria-hidden="true" class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li role="listitem" class="twitter">
+              <a href="#"
+                ><i aria-hidden="true" class="fa-brands fa-x-twitter"></i
+              ></a>
+            </li>
+            <li role="listitem">
+              <a href="#"
+                ><i aria-hidden="true" class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li role="listitem" class="youtube">
+              <a href="#"
+                ><i aria-hidden="true" class="fa-brands fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; 2025 Noornest Cleaning Services. All rights reserved.</p>
+        <ul class="copyright-links" role="list">
+          <li role="listitem"><a href="#">Privacy policy</a></li>
+          <li role="listitem"><a href="#">Terms of service</a></li>
+          <li role="listitem"><a href="#">Cookie settings</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/dist/boxicons.js"
+      integrity="sha512-kWH92pHUC/rcjpSMu19lT+H6TlZwZCAftg9AuSw+AVYSdEKSlXXB8o6g12mg5f+Pj5xO40A7ju2ot/VdodCthw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

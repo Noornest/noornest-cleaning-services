@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/redketchup/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/redketchup/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/redketchup/favicon-16x16.png" />
+    <link rel="manifest" href="./images/redketchup/site.webmanifest" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+
+    <!-- About page SEO -->
+    <meta
+      name="description"
+      content="Learn about Noornest Cleaning Services – a female-founded UK cleaning company supporting homes, offices, landlords and property portfolios across London, Greater Manchester and Berkshire." />
+    <meta
+      name="keywords"
+      content="about Noornest, Noornest Cleaning Services, cleaning company London, landlord cleaning partner, residential cleaners UK, office cleaning UK" />
+    <meta name="author" content="Noornest Cleaning Services" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.noornestcleaning.co.uk/" />
+    <meta
+      property="og:title"
+      content="About Noornest Cleaning Services | Professional Cleaners in the UK" />
+    <meta
+      property="og:description"
+      content="Discover the story, values and team behind Noornest Cleaning Services – trusted cleaners for homes, workplaces and property portfolios in the UK." />
+    <meta
+      property="og:image"
+      content="https://www.noornestcleaning.co.uk/images/og-image.jpg" />
+    <meta property="og:url" content="https://www.noornestcleaning.co.uk/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Noornest | About Us</title>
+  </head>
+  <body> 
+    <header>
+      <div class="logo-nav">
+        <a href="./index.html" class="logo">
+          <img src="./images/logo.png" alt="Noornest Cleaning Services logo" />
+        </a>
+
+        <nav role="navigation">
+          <ul class="nav-links" role="list">
+            <li role="listitem">
+              <a href="./index.html">Home</a>
+            </li>
+
+            <li role="listitem">
+              <a class="active" href="./aboutus.html">About Us</a>
+            </li>
+
+            <li
+              role="listitem"
+              class="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false">
+              <a class="dropdown-link" href="/services.html"
+                >Services<i
+                  aria-hidden="true"
+                  class="fa-solid fa-chevron-down"></i
+              ></a>
+
+              <ul role="list" class="dropdown-content">
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./residential-cleaning-service.html"
+                    >Home &amp; Personal Cleaning</a
+                  >
+                </li>
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./offices-workplaces-cleaning-service.html"
+                    >Offices &amp; Workplaces Cleaning</a
+                  >
+                </li>
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./retail-clinics-schools-cleaning-service.html"
+                    >Retail, Clinics &amp; Schools</a
+                  >
+                </li>
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./industrial-cleaning-service.html"
+                    >Industrial &amp; Specialist</a
+                  >
+                </li>
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./properties-cleaning-service.html"
+                    >Property &amp; Real Estate</a
+                  >
+                </li>
+                <li class="dropdown-menu" role="listitem">
+                  <a href="./cleaning-service-addOns.html">Add-On Services</a>
+                </li>
+              </ul>
+            </li>
+            <li role="listitem">
+              <a href="./contact.html">Contact Us</a>
+            </li>
+
+            <li role="listitem">
+              <a href="./career.html">Career</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="cta-menu">
+        <ul role="list" class="cta-header">
+          <li class="cta1" role="listitem">
+            <a href="contact.html">Book a Clean</a>
+          </li>
+          <li class="cta2" role="listitem">
+            <a href="free-quote.html">Get a Free Quote</a>
+          </li>
+          <li class="cta2 cta3" role="listitem">
+            <a href="free-quote.html">Get a Quote</a>
+          </li>
+        </ul>
+        <div onclick="toggleMenu()" class="hamburger">
+          <i aria-hidden="true" class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <main id="mainContent">
+      <!-- HERO: WHO WE ARE -->
+      <section class="commercial-hero about">
+        <div class="commercial-hero-text">
+          <p>About Noornest</p>
+          <h1>Clean spaces, happier days.</h1>
+          <p>
+            Noornest Cleaning Services is the cleaning arm of the Noornest
+            property brand, a female-founded team keeping homes, workplaces,
+            and property portfolios guest-ready across London, Manchester and
+            Berkshire.
+          </p>
+          <div class="commercial-hero-cta">
+            <ul role="list" class="cta-commercial">
+              <li role="listitem" class="com-cta1">
+                <a href="free-quote.html">Book a clean</a>
+              </li>
+              <li role="listitem" class="com-cta2">
+                <a href="#who-we-are">Learn more</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHO WE ARE / STORY -->
+      <section class="eco-friendly about" id="who-we-are" data-aos="fade-down">
+        <div class="eco-content">
+          <p>Who we are</p>
+          <h2>A cleaning partner built around real homes and real people</h2>
+          <p>
+            Noornest Cleaning Services was created by a group of friends who
+            manage property themselves and understand what it means to hand over
+            your keys. We combine hotel-standard cleaning with a warm,
+            residential touch — supporting landlords, tenants, families and
+            businesses who want spaces that feel ready for life at any moment.
+          </p>
+          <p>
+            From one-bed flats to busy offices and full property portfolios, we
+            bring the same mix of reliability, detail and respect into every
+            clean.
+          </p>
+          <div class="eco-cta">
+            <ul>
+              <li class="eco-cta1">
+                <a href="/services.html">Explore our services</a>
+              </li>
+              <li class="eco-cta2">
+                <a href="contact.html"
+                  >Contact us
+                  <i
+                    aria-hidden="true"
+                    class="fa-solid fa-chevron-right"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="eco-image">
+          <img
+            src="./images/Placeholder Image.png"
+            alt="Noornest cleaners working in a modern UK home" />
+        </div>
+      </section>
+
+      <!-- VALUES -->
+      <section class="add-on-services values" data-aos="zoom-in">
+        <div class="add-on-header">
+          <div>
+            <p>Our values</p>
+            <h2>The principles behind every Noornest clean</h2>
+          </div>
+          <p>
+            These four anchors guide how we work — how we treat your space, your
+            time and the people who live or work there.
+          </p>
+        </div>
+        <div class="add-on-cards">
+          <div class="add-on-card">
+            <span><img src="./images/icons/RAKE.svg" alt="clock icon" /></span>
+            <h3>Reliability you can plan around</h3>
+            <p>
+              We show up when we say we will, with the right team and equipment,
+              so you can schedule viewings, guests or workdays with confidence.
+            </p>
+          </div>
+          <div class="add-on-card">
+            <span
+              ><img
+                src="./images/icons/transform.svg"
+                alt="home protection icon" /></span>
+            <h3>Respect for your home and belongings</h3>
+            <p>
+              We treat your property as if it were our own, carefully moving
+              items only when needed and leaving everything as we found it —
+              just cleaner.
+            </p>
+          </div>
+          <div class="add-on-card">
+            <span
+              ><img
+                src="./images/icons/RAKE.svg"
+                alt="shield icon representing integrity" /></span>
+            <h3>Integrity in how we work</h3>
+            <p>
+              Clear quotes, honest communication and no hidden extras. If
+              something changes on the day, we discuss it with you first.
+            </p>
+          </div>
+          <div class="add-on-card">
+            <span
+              ><img
+                src="./images/icons/precision_manufacturing.svg"
+                alt="sparkling star icon" /></span>
+            <h3>Detail that makes spaces feel new</h3>
+            <p>
+              We follow structured checklists and quality checks, focusing on
+              the corners and touchpoints that make a property truly feel ready.
+            </p>
+          </div>
+        </div>
+        <div class="eco-cta">
+          <ul>
+            <li class="eco-cta1">
+              <a href="/services.html">Explore services</a>
+            </li>
+            <li class="eco-cta2">
+              <a href="free-quote.html"
+                >Request a quote<i
+                  aria-hidden="true"
+                  class="fa-solid fa-chevron-right"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- WHY CHOOSE US -->
+      <section class="add-on-services expertise" data-aos="zoom-in">
+        <div class="add-on-header">
+          <div>
+            <p>Expertise</p>
+            <h2>Why homes, offices and landlords choose Noornest</h2>
+          </div>
+          <p>
+            We support everyday living and property investment at the same time:
+            regular home cleaning, office and workplace care, and
+            tenant-changeover or pre-sale deep cleans for landlords and
+            developers.
+          </p>
+        </div>
+        <div class="add-on-cards">
+          <div class="add-on-card">
+            <span
+              ><img
+                src="./images/icons/RAKE.svg"
+                alt="buildings icon" /></span>
+            <h3>Specialists in lived-in and leased spaces</h3>
+            <p>
+              From family homes to HMOs, serviced apartments and offices, our
+              teams are trained for the realities of lived-in and high-traffic
+              environments.
+            </p>
+          </div>
+          <div class="add-on-card">
+            <span
+              ><img
+                src="./images/icons/precision_manufacturing.svg"
+                alt="badge icon" /></span>
+            <h3>Trained, vetted and insured teams</h3>
+            <p>
+              Every cleaner is background-checked, trained to our standards and
+              covered by our insurance, so you can hand over keys with peace of
+              mind.
+            </p>
+          </div>
+          <div class="add-on-card">
+            <span
+              ><img
+                src="./images/icons/RAKE.svg"
+                alt="checklist icon" /></span>
+            <h3>Structured checklists and quality reviews</h3>
+            <p>
+              We use consistent checklists across our six service areas and spot
+              reviews to make sure each clean feels the same, or better every
+              time.
+            </p>
+          </div>
+          <div class="add-on-card">
+            <span
+              ><img
+                src="./images/icons/RAKE.svg"
+                alt="calendar icon" /></span>
+            <h3>Flexible one-off and recurring plans</h3>
+            <p>
+              Choose a one-off deep clean, end-of-tenancy reset or regular
+              weekly, fortnightly or monthly visits that match your lifestyle
+              and portfolio rhythm.
+            </p>
+          </div>
+        </div>
+        <div class="eco-cta">
+          <ul>
+            <li class="eco-cta1">
+              <a href="free-quote.html">Discover pricing</a>
+            </li>
+            <li class="eco-cta2">
+              <a href="contact.html"
+                >Connect with our team<i
+                  aria-hidden="true"
+                  class="fa-solid fa-chevron-right"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- HOW WE WORK / PROCESS -->
+      <section class="understanding">
+        <div class="understand-header" data-aos="fade-down">
+          <p>Listen</p>
+          <h2>How we understand and plan your clean</h2>
+          <div class="eco-cta">
+            <ul>
+              <li class="eco-cta1">
+                <a href="free-quote.html">Start a quote</a>
+              </li>
+              <li class="eco-cta2">
+                <a href="contact.html"
+                  >Contact
+                  <i
+                    aria-hidden="true"
+                    class="fa-solid fa-chevron-right"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="understand-process" data-aos="fade-down">
+          <div class="contents">
+            <span class="content-span">
+              <i aria-hidden="true" class="fa-solid fa-comments"></i>
+              <div></div>
+            </span>
+            <span>
+              <h3>First contact</h3>
+              <p>
+                You share the basics — property type, rooms, frequency and any
+                special priorities like pets, children, or tenant changeovers.
+              </p>
+            </span>
+          </div>
+          <div class="contents">
+            <span class="content-span">
+              <i
+                aria-hidden="true"
+                class="fa-solid fa-magnifying-glass"></i>
+              <div></div>
+            </span>
+            <span>
+              <h3>Precise assessment</h3>
+              <p>
+                We recommend a plan based on your space: one-off deep clean,
+                regular maintenance, or a tailored mix for different properties.
+              </p>
+            </span>
+          </div>
+          <div class="contents">
+            <span class="content-span">
+              <i aria-hidden="true" class="fa-solid fa-briefcase"></i>
+              <div></div>
+            </span>
+            <span>
+              <h3>Clear quote and schedule</h3>
+              <p>
+                You receive a transparent quote and suggested schedule, aligned
+                with viewings, move-in dates or your preferred routine.
+              </p>
+            </span>
+          </div>
+          <div class="contents">
+            <span class="content-span">
+              <i aria-hidden="true" class="fa-solid fa-broom"></i>
+              <div></div>
+            </span>
+            <span>
+              <h3>Execution and feedback</h3>
+              <p>
+                Our team arrives on time, works through a structured checklist
+                and we invite your feedback so each following clean gets even
+                better.
+              </p>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- PEOPLE / TEAM -->
+      <section class="sustainability commitment">
+        <div class="sustain-side-container">
+          <div class="sustain-head">
+            <p>People</p>
+            <h2>Our commitment to exceptional cleaning professionals</h2>
+            <p>
+              Great cleaning starts with the people who deliver it. We invest in
+              our teams so they can take better care of your spaces — and feel
+              proud of the homes and workplaces they transform.
+            </p>
+          </div>
+          <div class="sustain-cards">
+            <div class="sustain-card">
+              <span
+                ><img
+                  src="./images/icons/precision_manufacturing.svg"
+                  alt="training icon" /></span>
+              <h3>Skilled and supported professionals</h3>
+              <p>
+                Our cleaners receive ongoing training in best-practice cleaning,
+                safety and customer care so every visit feels calm and
+                competent.
+              </p>
+            </div>
+            <div class="sustain-card">
+              <span
+                ><img
+                  src="./images/icons/remove_selection.svg"
+                  alt="shield icon" /></span>
+              <h3>Rigorous selection and vetting</h3>
+              <p>
+                We carefully screen every team member, including background
+                checks and reference checks, before they ever enter a client’s
+                property.
+              </p>
+            </div>
+          </div>
+          <div class="eco-cta">
+            <ul>
+              <li class="eco-cta1">
+                <a href="./career.html">Join our team</a>
+              </li>
+              <li class="eco-cta2">
+                <a href="contact.html"
+                  >Work with Noornest
+                  <i
+                    aria-hidden="true"
+                    class="fa-solid fa-chevron-right"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="sustain-img">
+          <img
+            src="./images/sustain1.jpg"
+            alt="Noornest cleaning professionals at work" />
+        </div>
+      </section>
+
+      <!-- SAFETY -->
+      <section class="protection" data-aos="fade-down">
+        <div class="quality-heading">
+          <p>Safety</p>
+          <h2>Protecting what matters most while we clean</h2>
+          <p>
+            Health, safety and security are at the heart of how we operate. We
+            protect your property, the people in it and our teams through
+            robust, practical measures.
+          </p>
+          <div class="eco-cta">
+            <ul>
+              <li class="eco-cta1">
+                <a href="#">Safety details</a>
+              </li>
+              <li class="eco-cta2">
+                <a href="#"
+                  >Our approach
+                  <i
+                    aria-hidden="true"
+                    class="fa-solid fa-chevron-right"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="protection-container" data-aos="fade-down">
+          <div class="protection-content" data-aos="fade-down">
+            <div>
+              <h3>Clear health and safety standards</h3>
+              <p>
+                We follow structured protocols around equipment, products and
+                access so every clean is carried out safely and professionally.
+              </p>
+            </div>
+            <div>
+              <h3>Comprehensive insurance cover</h3>
+              <p>
+                Our professional insurance is there to protect your property and
+                give you confidence when you hand over your keys.
+              </p>
+            </div>
+            <div>
+              <h3>Proactive risk management</h3>
+              <p>
+                From wet floors to fragile items, we identify risks in advance
+                and adapt how we work so cleaning never becomes a disruption or
+                a hazard.
+              </p>
+            </div>
+          </div>
+          <div class="protection-img" data-aos="fade-right">
+            <img
+              src="./images/protect.jpg"
+              alt="Cleaner following safety procedures" />
+          </div>
+        </div>
+      </section>
+
+      <!-- SUSTAINABILITY -->
+      <section class="sustainability" data-aos="fade-down">
+        <div class="sustain-side-container">
+          <div class="suatain-head">
+            <p>Sustainability</p>
+            <h2>Cleaning with respect for the environment</h2>
+            <p>
+              We offer eco-friendly options that reduce environmental impact
+              without sacrificing results. Wherever possible, we minimise waste
+              and choose products that are kinder to your home and the planet.
+            </p>
+          </div>
+          <div class="sustain-cards">
+            <div class="sustain-card">
+              <span
+                ><img
+                  src="./images/icons/RAKE.svg"
+                  alt="leaf icon" /></span>
+              <h3>Green cleaning options</h3>
+              <p>
+                Ask for eco-focused cleans that prioritise low-impact products
+                and microfibre methods while still achieving a high-standard
+                finish.
+              </p>
+            </div>
+            <div class="sustain-card">
+              <span
+                ><img
+                  src="./images/icons/eco.svg"
+                  alt="recycling icon" /></span>
+              <h3>Sustainable practices</h3>
+              <p>
+                We work to reduce chemical and plastic use over time and adopt
+                smarter ways of working that minimise waste on every visit.
+              </p>
+            </div>
+          </div>
+          <div class="eco-cta">
+            <ul>
+              <li class="eco-cta1">
+                <a href="#">Green options</a>
+              </li>
+              <li class="eco-cta2">
+                <a href="#"
+                  >Learn more
+                  <i
+                    aria-hidden="true"
+                    class="fa-solid fa-chevron-right"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="sustain-img">
+          <img
+            src="./images/sustain2.jpg"
+            alt="Eco-friendly cleaning products and plants" />
+        </div>
+      </section>
+
+      <!-- LOCATIONS -->
+      <section class="locations" data-aos="zoom-in">
+        <div class="location-heading">
+          <p>Locations</p>
+          <h2>Where we currently clean</h2>
+          <p>
+            We support homes, workplaces and landlords across key locations in
+            the United Kingdom, with plans to grow carefully over time.
+          </p>
+        </div>
+        <div class="location-cards">
+          <div class="location-card">
+            <img src="./images/Placeholder Image4.png" alt="London skyline" />
+            <h3>London</h3>
+            <p>The hub for our full range of residential and commercial cleans.</p>
+          </div>
+          <div class="location-card">
+            <img src="./images/Placeholder Image5.png" alt="Manchester city" />
+            <h3>Greater Manchester</h3>
+            <p>
+              Expanding our professional cleaning services across Greater
+              Manchester.
+            </p>
+          </div>
+          <div class="location-card">
+            <img src="./images/berkshire.jpg" alt="Berkshire landscape" />
+            <h3>Berkshire</h3>
+            <p>
+              Supporting homes and landlords across the county with reliable,
+              scheduled cleaning.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="our-clients" data-aos="fade-down">
+        <div class="our-clients-header">
+          <h2>What our clients say</h2>
+          <p>
+            A glimpse of the feedback we receive from residents, office
+            managers, and landlords who trust Noornest.
+          </p>
+        </div>
+
+        <div
+          class="client-reviews carousel"
+          data-flickity='{ "wrapAround": true }'>
+          <div class="client-review carousel-cell">
+            <span class="rating">
+              <i aria-hidden="true" class="fa-solid fa-star"></i>
+              <i aria-hidden="true" class="fa-solid fa-star"></i>
+              <i aria-hidden="true" class="fa-solid fa-star"></i>
+              <i aria-hidden="true" class="fa-solid fa-star"></i>
+              <i aria-hidden="true" class="fa-solid fa-star"></i>
+            </span>
+            <p>
+              "Noornest has made it so much easier to manage our flat between
+              guests. Reliable, detailed and always friendly with our neighbours
+              and building staff."
+            </p>
+            <div class="review-img">
+              <img
+                src="./images/client img.jpg"
+                alt="Photo of Sarah Johnson" />
+              <span>Sarah Johnson<br />Short-let host, London</span>
+            </div>
+          </div>
+
+          <div class="client-review carousel-cell">
+            <span class="rating">
+              <i aria-hidden="true" class="fa-solid fa-star"></i>
+              <i aria-hidden="true" class="fa-solid fa-star"></i>
+              <i aria-hidden="true" class="fa-solid fa-star"></i>
+              <i aria-hidden="true" class="fa-solid fa-star"></i>
+              <i aria-hidden="true" class="fa-solid fa-star"></i>
+            </span>
+            <p>
+              "Our office looks consistently sharp for clients. The team works
+              around our hours and nothing is ever too much trouble."
+            </p>
+            <div class="review-img">
+              <img
+                src="./images/client img.jpg"
+                alt="Photo of David Clarke" />
+              <span>David Clarke<br />Office Manager, Manchester</span>
+            </div>
+          </div>
+
+          <div class="client-review carousel-cell">
+            <span class="rating">
+              <i aria-hidden="true" class="fa-solid fa-star"></i>
+              <i aria-hidden="true" class="fa-solid fa-star"></i>
+              <i aria-hidden="true" class="fa-solid fa-star"></i>
+              <i aria-hidden="true" class="fa-solid fa-star"></i>
+              <i aria-hidden="true" class="fa-solid fa-star"></i>
+            </span>
+            <p>
+              "They understand what landlords need — fast turnarounds, good
+              photos after the clean, and properties that feel ready for new
+              tenants."
+            </p>
+            <div class="review-img">
+              <img
+                src="./images/client img.jpg"
+                alt="Photo of Aisha Patel" />
+              <span>Aisha Patel<br />Landlord, Berkshire</span>
+            </div>
+          </div>
+
+          <div class="client-review carousel-cell">
+            <span class="rating">
+              <i aria-hidden="true" class="fa-solid fa-star"></i>
+              <i aria-hidden="true" class="fa-solid fa-star"></i>
+              <i aria-hidden="true" class="fa-solid fa-star"></i>
+              <i aria-hidden="true" class="fa-solid fa-star"></i>
+              <i aria-hidden="true" class="fa-solid fa-star"></i>
+            </span>
+            <p>
+              "The team is polite, on time and thorough. Our home feels calmer
+              and more organised after every visit."
+            </p>
+            <div class="review-img">
+              <img
+                src="./images/client img.jpg"
+                alt="Photo of Emily Roberts" />
+              <span>Emily Roberts<br />Residential client, London</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="faqs">
+        <div class="faq-header" data-aos="fade-down">
+          <h2>Questions</h2>
+          <p>
+            A few quick answers about how we work. For anything more specific,
+            just get in touch.
+          </p>
+        </div>
+        <div class="faq-cards" data-aos="fade-down">
+          <div class="faq-card">
+            <span
+              ><img
+                src="./images/icons/household_supplies.svg"
+                alt="cleaning supplies icon" /></span>
+            <h3>Do you bring cleaning supplies?</h3>
+            <p>
+              Yes. Our teams arrive with professional-grade products and
+              equipment. If you prefer we use your own products, we can do that
+              too.
+            </p>
+          </div>
+          <div class="faq-card">
+            <span
+              ><img
+                src="./images/icons/folder_supervised.svg"
+                alt="supervision icon" /></span>
+            <h3>Are your teams supervised?</h3>
+            <p>
+              We use team leaders, checklists and spot inspections to make sure
+              every clean meets Noornest standards.
+            </p>
+          </div>
+          <div class="faq-card">
+            <span
+              ><img
+                src="./images/icons/RAKE.svg"
+                alt="special requirements icon" /></span>
+            <h3>Can you handle special requirements?</h3>
+            <p>
+              Yes. Let us know about allergies, pets, delicate surfaces or
+              tenant timelines and we tailor our approach.
+            </p>
+          </div>
+          <div class="faq-card">
+            <span
+              ><img
+                src="./images/icons/design_services.svg"
+                alt="map icon" /></span>
+            <h3>What are your service areas?</h3>
+            <p>
+              We currently cover London, Greater Manchester and Berkshire, with
+              some flexibility for portfolio clients.
+            </p>
+          </div>
+          <div class="faq-card">
+            <span
+              ><img
+                src="./images/icons/call_quality.svg"
+                alt="quality icon" /></span>
+            <h3>How do you ensure consistent quality?</h3>
+            <p>
+              A mix of training, structured checklists and feedback loops helps
+              us keep each visit to the same standard or better.
+            </p>
+          </div>
+          <div class="faq-card">
+            <span
+              ><img src="./images/icons/question_exchange.svg" alt="help icon"
+            /></span>
+            <h3>Still have questions?</h3>
+            <p>
+              Our team is happy to talk through your property, workplace or
+              portfolio and suggest the best cleaning plan.
+            </p>
+          </div>
+        </div>
+        <div class="faq-questions">
+          <h3>Need more information?</h3>
+          <p>Send us a message and we will respond with tailored advice.</p>
+          <div class="why-choose-cta1">
+            <a href="contact.html">Ask</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT STRIP -->
+      <section class="experience about" data-aos="fade-down">
+        <div class="contact-container">
+          <div class="contact-us-heading">
+            <p>Connect</p>
+            <h2>Ready to talk?</h2>
+            <p>
+              Reach out by phone, email or WhatsApp to discuss your home,
+              office, or property portfolio. We will help you choose the right
+              cleaning plan.
+            </p>
+          </div>
+          <div class="contact-link">
+            <div class="contact-div">
+              <span
+                ><i aria-hidden="true" class="fa-solid fa-envelope"></i
+              ></span>
+              <span
+                ><h3>Email</h3>
+                <a href="mailto:hello@noornestcleaning.co.uk"
+                  >hello@noornestcleaning.co.uk</a
+                ></span
+              >
+            </div>
+            <div class="contact-div">
+              <span><i aria-hidden="true" class="fa-solid fa-phone"></i></span>
+              <span
+                ><h3>Phone</h3>
+                <a href="tel:+44 (0)XXXX XXX XXX">+44 (0)XXXX XXX XXX</a></span
+              >
+            </div>
+            <div class="contact-div">
+              <span><i aria-hidden="true" class="fa-solid fa-clock"></i></span>
+              <span
+                ><h3>Hours</h3>
+                <p>Monday to Saturday, 08:00–18:00</p></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="exp-image">
+          <img
+            src="./images/Noornest Cleaning Services.png"
+            alt="Noornest cleaning team illustration" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-top">
+        <div class="footer-content">
+          <img src="./images/logo2.png" alt="Noornest logo" class="footer-logo" />
+          <div class="footer-contact">
+            <p>Noornest<br />London, United Kingdom</p>
+            <br />
+            <p>Contact</p>
+            <a href="tel:+4402012345678">+44 (0)20 1234 5678</a>
+            <a href="mailto:hello@noornestcleaning.co.uk"
+              >hello@noornestcleaning.co.uk</a
+            >
+          </div>
+          <ul class="quick-links1" role="list">
+            <li role="listitem"><a href="/services.html">Our services</a></li>
+            <li role="listitem"><a href="#">Book cleaning</a></li>
+            <li role="listitem"><a href="#">Areas covered</a></li>
+            <li role="listitem"><a href="/aboutus.html">About us</a></li>
+          </ul>
+          <ul class="quick-links2" role="list">
+            <li role="listitem"><a href="#">Customer reviews</a></li>
+            <li role="listitem"><a href="#">FAQ</a></li>
+            <li role="listitem"><a href="#">Careers</a></li>
+            <li role="listitem"><a href="#">Support</a></li>
+          </ul>
+
+          <div>
+            <p>Trademark/Insured by:</p>
+            <a href="https://www.checkatrade.com/">
+              <img
+                src="/images/check-a-trade.webp"
+                alt="Checkatrade logo"
+                class="cat-logo" />
+            </a>
+          </div>
+        </div>
+        <div class="footer-socials">
+          <ul class="socials" role="list">
+            <li role="listitem">
+              <a href="#"
+                ><i aria-hidden="true" class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li role="listitem" class="instagram">
+              <a href="#"
+                ><i aria-hidden="true" class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li role="listitem" class="twitter">
+              <a href="#"
+                ><i aria-hidden="true" class="fa-brands fa-x-twitter"></i
+              ></a>
+            </li>
+            <li role="listitem">
+              <a href="#"
+                ><i aria-hidden="true" class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li role="listitem" class="youtube">
+              <a href="#"
+                ><i aria-hidden="true" class="fa-brands fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; 2025 Noornest Cleaning Services. All rights reserved</p>
+        <ul class="copyright-links" role="list">
+          <li role="listitem"><a href="#">Privacy policy</a></li>
+          <li role="listitem"><a href="#">Terms of service</a></li>
+          <li role="listitem"><a href="#">Cookies settings</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </body>
+</html>

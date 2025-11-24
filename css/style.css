@@ -220,7 +220,12 @@ header {
 }
 
 .dropdown-menu a:is(:hover, :focus-visible) {
-  color: var(--shade-one);
+  /* color: var(--shade-one); */
+  background: var(--accent-color);
+  /* margin: 0; */
+  padding: .5rem 1rem;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
 }
 
 .dropdown-menu a.active {
@@ -2389,6 +2394,10 @@ label[for="message"] {
 .sustainability h2 {
   font-size: var(--h2font-size);
   font-weight: var(--h2font-weight);
+}
+
+.understand-header .eco-cta ul .eco-cta1 a:hover {
+  color: var(--bg-color);
 }
 
 .request li {

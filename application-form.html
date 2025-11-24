@@ -43,25 +43,28 @@
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
 
-    <!-- Careers page SEO -->
+    <!-- Application page SEO -->
     <meta
       name="description"
-      content="Explore cleaning jobs and careers with Noornest Cleaning Services in London, Greater Manchester and Berkshire. Flexible shifts, training and fair pay for residential, commercial and specialist cleaners."
+      content="Apply to join Noornest Cleaning Services. Submit your details, reference contact and CV to be considered for residential, commercial or specialist cleaning roles."
     />
     <meta
       name="keywords"
-      content="cleaning jobs London, cleaning careers UK, Noornest jobs, part-time cleaner London, commercial cleaning jobs Manchester, housekeeping jobs Berkshire, cleaner vacancies UK"
+      content="cleaning job application, cleaner application form, Noornest jobs, cleaning careers UK, apply for cleaning job"
     />
     <meta name="author" content="Noornest Cleaning Services" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://www.noornestcleaning.co.uk/career" />
+    <link
+      rel="canonical"
+      href="https://www.noornestcleaning.co.uk/application-form"
+    />
     <meta
       property="og:title"
-      content="Cleaning Jobs & Careers | Noornest Cleaning Services"
+      content="Application Form | Noornest Cleaning Services"
     />
     <meta
       property="og:description"
-      content="Join the Noornest Cleaning Services team. Flexible hours, fair pay and ongoing training for cleaners across London, Greater Manchester and Berkshire."
+      content="Complete the Noornest Cleaning Services application form and submit your CV to join our cleaning team."
     />
     <meta
       property="og:image"
@@ -69,13 +72,15 @@
     />
     <meta
       property="og:url"
-      content="https://www.noornestcleaning.co.uk/career"
+      content="https://www.noornestcleaning.co.uk/application-form"
     />
     <meta name="twitter:card" content="summary_large_image" />
-    <title>Noornest | Cleaning Jobs & Careers</title>
+    <title>Noornest | Application Form</title>
   </head>
   <body>
     <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+    <!-- HEADER -->
     <header>
       <div class="logo-nav">
         <a href="./index.html" class="logo">
@@ -141,7 +146,7 @@
             </li>
 
             <li role="listitem">
-              <a class="active" href="./career.html">Career</a>
+              <a href="./career.html">Career</a>
             </li>
           </ul>
         </nav>
@@ -169,190 +174,260 @@
       <!-- HERO -->
       <section class="commercial-hero career">
         <div class="commercial-hero-text">
-          <h1>Join our cleaning team</h1>
+          <h1>Application Form</h1>
           <p>
-            Help us keep homes, offices and shared spaces spotless across
-            London, Greater Manchester and Berkshire – with fair pay, support
-            and structure.
+            Submit your details, reference and CV to be considered for roles in
+            the Noornest cleaning team.
           </p>
         </div>
       </section>
 
-      <!-- JOIN OUR TEAM / BUILD CAREER -->
-      <section class="commercial-spaces grow">
-        <div class="com-space-head">
-          <p>Careers</p>
-          <h2>Build your career with Noornest</h2>
+      <!-- APPLICATION FORM -->
+      <section class="application-section">
+        <div class="application-intro">
+          <p>Apply</p>
+          <h2>Join Noornest cleaning services</h2>
           <p>
-            Whether you’re new to cleaning or already experienced, we provide
-            clear expectations, training and support so you can do your best
-            work.
+            Please complete all required fields marked with an asterisk (*). We
+            use this information only for recruitment purposes.
           </p>
         </div>
 
-        <div class="space-container">
-          <div class="left-container">
-            <div class="card-content">
-              <p>Join our team</p>
-              <h2>Professional cleaning, real opportunities</h2>
-              <p>
-                We see cleaning as a professional service, not just a side job.
-                You’ll work with respectful clients, have guidance from
-                supervisors and be part of a team that values reliability and
-                good standards.
-              </p>
-              <div class="eco-cta">
-                <ul>
-                  <li class="eco-cta1">
-                    <a href="application-form.html">Apply online</a>
-                  </li>
-                  <li class="eco-cta2">
-                    <a href="#how-to-apply">
-                      See how it works
-                      <i
-                        aria-hidden="true"
-                        class="fa-solid fa-chevron-right"
-                      ></i>
-                    </a>
-                  </li>
-                </ul>
+        <form
+          class="application-form"
+          action="/submit-application"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <!-- PERSONAL INFORMATION -->
+          <fieldset class="application-fieldset">
+            <legend>Personal information</legend>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="firstName">
+                  First Name <span aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  class="contact-box"
+                  placeholder="First Name"
+                  required
+                />
+              </div>
+
+              <div class="form-field">
+                <label for="lastName">
+                  Last Name <span aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  class="contact-box"
+                  placeholder="Last Name"
+                  required
+                />
               </div>
             </div>
-            <img
-              src="/images/Untitled design (2).png"
-              alt="Noornest cleaners at work"
-            />
-          </div>
 
-          <div class="right-container">
-            <div class="mini-containers">
-              <div class="mini-content">
-                <p>Residential</p>
-                <h3>Home &amp; personal cleaning</h3>
-                <p>
-                  Support families and individuals with regular or one-off home
-                  cleans in safe, respectful environments.
-                </p>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="telephone">
+                  Telephone <span aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="tel"
+                  id="telephone"
+                  name="telephone"
+                  class="contact-box"
+                  placeholder="+44..."
+                  required
+                />
               </div>
-              <img src="./images/build1.png" alt="Residential cleaning" />
+
+              <div class="form-field">
+                <label for="email">
+                  Email <span aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="contact-box"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- POSITION APPLYING FOR -->
+          <fieldset class="application-fieldset">
+            <legend>Position applying for</legend>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="applicationRole">
+                  Application Role <span aria-hidden="true">*</span>
+                </label>
+                <select
+                  name="applicationRole"
+                  id="applicationRole"
+                  class="contact-box"
+                  required
+                >
+                  <option value="">Select</option>
+                  <option value="residential-cleaner">
+                    Residential cleaner
+                  </option>
+                  <option value="commercial-cleaner">Commercial cleaner</option>
+                  <option value="specialist-cleaner">
+                    Specialist / deep-cleaner
+                  </option>
+                  <option value="team-lead">Team lead / supervisor</option>
+                  <option value="other">Other cleaning role</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- REFERENCE -->
+          <fieldset class="application-fieldset">
+            <legend>Reference details</legend>
+            <p class="fieldset-note">
+              Provide a professional reference who can confirm your work and
+              reliability.
+            </p>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="refFirstName">
+                  Reference First Name <span aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="refFirstName"
+                  name="refFirstName"
+                  class="contact-box"
+                  placeholder="First Name"
+                  required
+                />
+              </div>
+
+              <div class="form-field">
+                <label for="refLastName">
+                  Reference Last Name <span aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="refLastName"
+                  name="refLastName"
+                  class="contact-box"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
             </div>
 
-            <div class="mini-containers">
-              <div class="mini-content">
-                <p>Commercial</p>
-                <h3>Offices &amp; workplaces</h3>
-                <p>
-                  Keep offices, clinics, schools and shared spaces clean and
-                  presentable for staff and visitors.
-                </p>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="refTelephone">
+                  Reference Telephone <span aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="tel"
+                  id="refTelephone"
+                  name="refTelephone"
+                  class="contact-box"
+                  placeholder="+44..."
+                  required
+                />
               </div>
-              <img src="./images/build2.png" alt="Commercial cleaning" />
-            </div>
 
-            <div class="mini-containers">
-              <div class="mini-content">
-                <p>Specialist</p>
-                <h3>Specialist &amp; deep-clean work</h3>
-                <p>
-                  For experienced cleaners, we also offer end-of-tenancy,
-                  post-build and specialist cleaning assignments.
-                </p>
+              <div class="form-field">
+                <label for="refRelationship">
+                  Relationship <span aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="refRelationship"
+                  name="refRelationship"
+                  class="contact-box"
+                  placeholder="e.g. Former manager, supervisor"
+                  required
+                />
               </div>
-              <img src="./images/build3.png" alt="Specialist cleaning" />
             </div>
-          </div>
-        </div>
-      </section>
+          </fieldset>
 
-      <!-- WHY WORK WITH US -->
-      <section class="career-growth career-why">
-        <img src="./images/cleaningess.png" alt="Cleaning essentials" />
-        <div class="growth-content">
-          <h2>Why work with Noornest?</h2>
-          <p>
-            We focus on fair treatment, clear communication and long-term
-            relationships with our teams.
-          </p>
+          <!-- ADDITIONAL INFORMATION -->
+          <fieldset class="application-fieldset">
+            <legend>Additional information</legend>
 
-          <div>
-            <span class="career-icon">
-              <img src="./images/icons/clock.svg" alt="Flexible shifts icon" />
-            </span>
-            <span>
-              <h3>Flexible shifts</h3>
-              <p>
-                Choose from part-time, full-time or weekend work depending on
-                your availability and location.
-              </p>
-            </span>
-          </div>
+            <div class="form-row single">
+              <div class="form-field">
+                <label for="additionalInfo">Additional information</label>
+                <textarea
+                  name="additionalInfo"
+                  id="additionalInfo"
+                  class="contact-box"
+                  placeholder="Tell us about your experience, availability, and anything else you'd like us to know."
+                  rows="6"
+                ></textarea>
+              </div>
+            </div>
+          </fieldset>
 
-          <div>
-            <span class="career-icon">
-              <img src="./images/icons/RAKE.svg" alt="Training icon" />
-            </span>
-            <span>
-              <h3>Training &amp; support</h3>
-              <p>
-                We provide clear checklists, product guidance and on-the-job
-                support so you know exactly what’s expected.
-              </p>
-            </span>
-          </div>
+          <!-- UPLOAD RESUME -->
+          <fieldset class="application-fieldset">
+            <legend>Upload resume</legend>
+            <p class="fieldset-note">
+              Upload your most recent CV in PDF or Word format.
+            </p>
 
-          <div>
-            <span class="career-icon">
-              <img src="./images/icons/paid.svg" alt="Pay icon" />
-            </span>
-            <span>
-              <h3>Fair pay &amp; progression</h3>
-              <p>
-                Competitive hourly rates, regular payments and opportunities to
-                grow into senior or specialist roles over time.
-              </p>
-            </span>
-          </div>
+            <div class="form-row single">
+              <div class="form-field file-field">
+                <label for="resume">
+                  Upload Resume <span aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="file"
+                  id="resume"
+                  name="resume"
+                  class="contact-box file-input"
+                  accept=".pdf,.doc,.docx"
+                  required
+                />
+              </div>
+            </div>
+          </fieldset>
 
-          <div class="eco-cta">
-            <ul>
-              <li class="eco-cta1">
-                <a href="application-form.html">Start application</a>
-              </li>
-              <li class="eco-cta2">
-                <a href="mailto:hello@noornestcleaning.co.uk">
-                  Ask a question
-                  <i aria-hidden="true" class="fa-solid fa-chevron-right"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+          <!-- CONSENT -->
+          <fieldset class="application-fieldset">
+            <legend>Consent</legend>
+            <div class="form-row single">
+              <label for="consent" class="checkbox-field">
+                <input type="checkbox" id="consent" name="consent" required />
+                <span>
+                  I consent to Noornest Cleaning Services processing my personal
+                  data for recruitment purposes.
+                </span>
+              </label>
+            </div>
+          </fieldset>
 
-      <!-- HOW TO APPLY -->
-      <section class="how-to-apply" id="how-to-apply">
-        <div class="exp-header">
-          <h2>How to apply</h2>
-          <p>
-            Complete our short online application and attach your CV. We’ll
-            review your details and contact you if there’s a suitable role.
-          </p>
-          <div class="experience-cta">
-            <ul role="list" class="cta-hero">
-              <li role="listitem" class="hero-cta2">
-                <a href="application-form.html">Fill application form</a>
-              </li>
-              <li role="listitem" class="hero-cta1">
-                <a href="mailto:hello@noornestcleaning.co.uk">
-                  Email your CV
-                </a>
-              </li>
-            </ul>
+          <!-- SUBMIT -->
+          <div class="submit application-submit">
+            <button id="submitBtn" type="submit">Submit application</button>
           </div>
-        </div>
+        </form>
       </section>
     </main>
 
+    <!-- FOOTER -->
     <footer>
       <div class="footer-top">
         <div class="footer-content">
@@ -432,14 +507,13 @@
         </ul>
       </div>
     </footer>
+
     <script src="./js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/dist/boxicons.js"
       integrity="sha512-kWH92pHUC/rcjpSMu19lT+H6TlZwZCAftg9AuSw+AVYSdEKSlXXB8o6g12mg5f+Pj5xO40A7ju2ot/VdodCthw=="

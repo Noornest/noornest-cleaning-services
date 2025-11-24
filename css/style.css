@@ -2604,6 +2604,7 @@ form .submit button:is(:hover, :focus-visible) {
   grid-template-columns: repeat(1, 1fr);
   padding: 3rem 2rem;
   gap: 3rem;
+  align-items: center;
 }
 
 .sustain-cards {

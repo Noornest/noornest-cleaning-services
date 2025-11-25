@@ -7,18 +7,16 @@ const toggleMenu = () => {
 const accordion = document.querySelector(".dropdown");
 const menu = document.querySelector(".dropdown-content");
 
-accordion.addEventListener("click", ()=> {
-
+accordion.addEventListener("click", () => {
   accordion.classList.toggle("active");
 
-   // <ul class="dropdown-content menu">
+  // <ul class="dropdown-content menu">
   if (menu.style.display === "block") {
     menu.style.display = "none";
   } else {
     menu.style.display = "block";
   }
 });
-
 
 document.querySelectorAll(".dropdown > a").forEach((link) => {
   link.addEventListener("keydown", (e) => {
@@ -137,3 +135,154 @@ document.querySelectorAll(".protocol-container").forEach((container) => {
     cards[0].classList.add("active");
   }
 });
+
+// ###############################################################
+// ###############################################################
+// ############# CONTACT FORM EMAILJS INTEGRATION ################
+// ###############################################################
+// ###############################################################
+
+// Contact form emailjs integration
+// 1) Initialise EmailJS with your public key
+(function () {
+  emailjs.init("YOUR_PUBLIC_KEY"); // e.g. "d9xXxXxXxXxXxX"
+})();
+
+// 2) Handle form submission
+const contactForm = document.getElementById("contactForm");
+const submitBtn = document.getElementById("submitBtn");
+const statusEl = document.getElementById("formStatus");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // UI: show sending state
+    submitBtn.disabled = true;
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = "Sending…";
+    statusEl.textContent = "";
+
+    emailjs
+      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", "#contactForm")
+      .then(function () {
+        statusEl.textContent =
+          "Thank you. Your message has been sent to the Noornest team.";
+        contactForm.reset();
+      })
+      .catch(function (error) {
+        console.error("EmailJS error:", error);
+        statusEl.textContent =
+          "Sorry, something went wrong. Please try again or contact us directly.";
+      })
+      .finally(function () {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+      });
+  });
+}
+
+// ###############################################################
+// ###############################################################
+// ########### APPLICATION FORM EMAILJS INTEGRATION ##############
+// ###############################################################
+// ###############################################################
+// Initialise EmailJS
+(function () {
+  emailjs.init("YOUR_PUBLIC_KEY"); // e.g. "d9Xxxxxxxx"
+})();
+
+const applicationForm = document.getElementById("applicationForm");
+const applicationBtn = document.getElementById("applicationSubmitBtn");
+const applicationStatus = document.getElementById("applicationStatus");
+
+if (applicationForm) {
+  applicationForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Use built–in HTML validation
+    if (!applicationForm.checkValidity()) {
+      applicationForm.reportValidity();
+      return;
+    }
+
+    const originalText = applicationBtn.textContent;
+    applicationBtn.disabled = true;
+    applicationBtn.textContent = "Sending…";
+    applicationStatus.textContent = "";
+
+    emailjs
+      .sendForm(
+        "YOUR_SERVICE_ID", // e.g. "service_noornest"
+        "YOUR_APPLICATION_TEMPLATE_ID", // e.g. "template_application"
+        "#applicationForm"
+      )
+      .then(function () {
+        applicationStatus.textContent =
+          "Thank you. Your application has been sent to the Noornest team.";
+        applicationForm.reset();
+      })
+      .catch(function (error) {
+        console.error("EmailJS error:", error);
+        applicationStatus.textContent =
+          "Sorry, something went wrong. Please try again or email us directly.";
+      })
+      .finally(function () {
+        applicationBtn.disabled = false;
+        applicationBtn.textContent = originalText;
+      });
+  });
+}
+
+// ###############################################################
+// ###############################################################
+// ############ FREE-QUOTE FORM EMAILJS INTEGRATION ##############
+// ###############################################################
+// ###############################################################
+// 1) Initialise EmailJS with your public key
+(function () {
+  emailjs.init("YOUR_PUBLIC_KEY"); // e.g. "d9Xxxxxxxx"
+})();
+
+const quoteForm = document.getElementById("quoteForm");
+const quoteBtn = document.getElementById("quoteSubmitBtn");
+const quoteStatus = document.getElementById("quoteStatus");
+
+if (quoteForm) {
+  quoteForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Basic HTML5 validation
+    if (!quoteForm.checkValidity()) {
+      quoteForm.reportValidity();
+      return;
+    }
+
+    // UI: loading state
+    const originalText = quoteBtn.textContent;
+    quoteBtn.disabled = true;
+    quoteBtn.textContent = "Sending…";
+    quoteStatus.textContent = "";
+
+    emailjs
+      .sendForm(
+        "YOUR_SERVICE_ID", // e.g. "service_noornest"
+        "YOUR_QUOTE_TEMPLATE_ID", // e.g. "template_quote"
+        "#quoteForm"
+      )
+      .then(function () {
+        quoteStatus.textContent =
+          "Thank you. Your quote request has been sent to the Noornest team.";
+        quoteForm.reset();
+      })
+      .catch(function (error) {
+        console.error("EmailJS error:", error);
+        quoteStatus.textContent =
+          "Sorry, something went wrong. Please try again or contact us directly.";
+      })
+      .finally(function () {
+        quoteBtn.disabled = false;
+        quoteBtn.textContent = originalText;
+      });
+  });
+}

@@ -194,8 +194,9 @@
         </div>
 
         <form
+          id="applicationForm"
           class="application-form"
-          action="/submit-application"
+          action="#"
           method="POST"
           enctype="multipart/form-data"
         >
@@ -421,85 +422,132 @@
 
           <!-- SUBMIT -->
           <div class="submit application-submit">
-            <button id="submitBtn" type="submit">Submit application</button>
+            <button id="applicationSubmitBtn" type="submit">
+              Submit application
+            </button>
+            <p
+              id="applicationStatus"
+              class="quote-small"
+              aria-live="polite"
+            ></p>
           </div>
+
+          <!-- Optional hidden field so you know the source -->
+          <input
+            type="hidden"
+            name="form_name"
+            value="Noornest job application form"
+          />
         </form>
       </section>
     </main>
 
     <!-- FOOTER -->
     <footer>
-  <div class="footer-top">
-    <div class="footer-content">
-      <img src="./images/logo2.png" alt="Noornest Cleaning Services logo" class="footer-logo" />
-
-      <div class="footer-contact">
-        <p>Noornest<br />London, United Kingdom</p>
-        <br />
-        <p>Contact</p>
-        <a href="tel:+4402039838559">+44 (0) 2039 838 559</a>
-        <a href="mailto:info@noornestcleaning.co.uk">info@noornestcleaning.co.uk</a>
-      </div>
-
-      <!-- Key site links -->
-      <ul class="quick-links1" role="list">
-        <li role="listitem"><a href="./index.html">Home</a></li>
-        <li role="listitem"><a href="/services.html">Our services</a></li>
-        <li role="listitem"><a href="./residential-cleaning-service.html">Home &amp; personal cleaning</a></li>
-        <li role="listitem"><a href="./offices-workplaces-cleaning-service.html">Offices &amp; workplaces</a></li>
-        <li role="listitem"><a href="./properties-cleaning-service.html">Property &amp; real estate</a></li>
-      </ul>
-
-      <ul class="quick-links2" role="list">
-        <li role="listitem"><a href="./aboutus.html">About us</a></li>
-        <li role="listitem"><a href="./career.html">Careers</a></li>
-        <li role="listitem"><a href="./contact.html">Book a clean</a></li>
-        <li role="listitem"><a href="./free-quote.html">Get a free quote</a></li>
-      </ul>
-
-      <div>
-        <p>Trademark/Insured by:</p>
-        <a href="https://www.checkatrade.com/">
+      <div class="footer-top">
+        <div class="footer-content">
           <img
-            src="/images/check-a-trade.webp"
-            alt="Checkatrade logo"
-            class="cat-logo"
+            src="./images/logo2.png"
+            alt="Noornest Cleaning Services logo"
+            class="footer-logo"
           />
-        </a>
+
+          <div class="footer-contact">
+            <p>Noornest<br />London, United Kingdom</p>
+            <br />
+            <p>Contact</p>
+            <a href="tel:+4402039838559">+44 (0) 2039 838 559</a>
+            <a href="mailto:info@noornestcleaning.co.uk"
+              >info@noornestcleaning.co.uk</a
+            >
+          </div>
+
+          <!-- Key site links -->
+          <ul class="quick-links1" role="list">
+            <li role="listitem"><a href="./index.html">Home</a></li>
+            <li role="listitem"><a href="/services.html">Our services</a></li>
+            <li role="listitem">
+              <a href="./residential-cleaning-service.html"
+                >Home &amp; personal cleaning</a
+              >
+            </li>
+            <li role="listitem">
+              <a href="./offices-workplaces-cleaning-service.html"
+                >Offices &amp; workplaces</a
+              >
+            </li>
+            <li role="listitem">
+              <a href="./properties-cleaning-service.html"
+                >Property &amp; real estate</a
+              >
+            </li>
+          </ul>
+
+          <ul class="quick-links2" role="list">
+            <li role="listitem"><a href="./aboutus.html">About us</a></li>
+            <li role="listitem"><a href="./career.html">Careers</a></li>
+            <li role="listitem"><a href="./contact.html">Book a clean</a></li>
+            <li role="listitem">
+              <a href="./free-quote.html">Get a free quote</a>
+            </li>
+          </ul>
+
+          <div>
+            <p>Trademark/Insured by:</p>
+            <a href="https://www.checkatrade.com/">
+              <img
+                src="/images/check-a-trade.webp"
+                alt="Checkatrade logo"
+                class="cat-logo"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-socials">
+          <ul class="socials" role="list">
+            <li role="listitem">
+              <a href="#"
+                ><i aria-hidden="true" class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li role="listitem" class="instagram">
+              <a href="#"
+                ><i aria-hidden="true" class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li role="listitem" class="twitter">
+              <a href="#"
+                ><i aria-hidden="true" class="fa-brands fa-x-twitter"></i
+              ></a>
+            </li>
+            <li role="listitem">
+              <a href="#"
+                ><i aria-hidden="true" class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li role="listitem" class="youtube">
+              <a href="#"
+                ><i aria-hidden="true" class="fa-brands fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
 
-    <div class="footer-socials">
-      <ul class="socials" role="list">
-        <li role="listitem">
-          <a href="#"><i aria-hidden="true" class="fa-brands fa-facebook"></i></a>
-        </li>
-        <li role="listitem" class="instagram">
-          <a href="#"><i aria-hidden="true" class="fa-brands fa-instagram"></i></a>
-        </li>
-        <li role="listitem" class="twitter">
-          <a href="#"><i aria-hidden="true" class="fa-brands fa-x-twitter"></i></a>
-        </li>
-        <li role="listitem">
-          <a href="#"><i aria-hidden="true" class="fa-brands fa-linkedin"></i></a>
-        </li>
-        <li role="listitem" class="youtube">
-          <a href="#"><i aria-hidden="true" class="fa-brands fa-youtube"></i></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="footer-copyright">
-    <p>&copy; 2025 Noornest Cleaning Services. All rights reserved</p>
-    <ul class="copyright-links" role="list">
-      <li role="listitem"><a href="privacy-policy.html">Privacy policy</a></li>
-      <li role="listitem"><a href="terms-and-conditions.html">Terms of service</a></li>
-      <!-- <li role="listitem"><a href="#">Cookies settings</a></li> -->
-    </ul>
-  </div>
-</footer>
-
+      <div class="footer-copyright">
+        <p>&copy; 2025 Noornest Cleaning Services. All rights reserved</p>
+        <ul class="copyright-links" role="list">
+          <li role="listitem">
+            <a href="privacy-policy.html">Privacy policy</a>
+          </li>
+          <li role="listitem">
+            <a href="terms-and-conditions.html">Terms of service</a>
+          </li>
+          <!-- <li role="listitem"><a href="#">Cookies settings</a></li> -->
+        </ul>
+      </div>
+    </footer>
 
     <script src="./js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
@@ -513,5 +561,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   </body>
 </html>

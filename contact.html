@@ -252,46 +252,51 @@
         </div>
 
         <!-- Add action/method when backend is ready -->
-        <form>
+        <form id="contactForm">
+          <!-- you can add action/method later if you add a backend -->
           <span class="input-span">
-            <label for="firstName"
-              >First Name
+            <label for="firstName">
+              First Name
               <input
                 type="text"
                 id="firstName"
+                name="first_name"
                 class="contact-box"
                 placeholder="First name"
                 required
               />
             </label>
 
-            <label for="lastName"
-              >Last Name
+            <label for="lastName">
+              Last Name
               <input
                 type="text"
                 id="lastName"
+                name="last_name"
                 class="contact-box"
                 placeholder="Last name"
                 required
               />
             </label>
 
-            <label for="email"
-              >Email
+            <label for="email">
+              Email
               <input
                 type="email"
                 id="email"
+                name="user_email"
                 class="contact-box"
                 placeholder="Email address"
                 required
               />
             </label>
 
-            <label for="phoneNumber"
-              >Phone Number
+            <label for="phoneNumber">
+              Phone Number
               <input
                 type="tel"
                 id="phoneNumber"
+                name="phone_number"
                 class="contact-box"
                 placeholder="Phone number"
                 required
@@ -299,9 +304,14 @@
             </label>
           </span>
 
-          <label for="service"
-            >Select service type
-            <select name="service" id="service" class="contact-box" required>
+          <label for="service">
+            Select service type
+            <select
+              name="service_type"
+              id="service"
+              class="contact-box"
+              required
+            >
               <option value="">Select one…</option>
               <option value="Residential cleaning">Residential cleaning</option>
               <option value="Office & workplace cleaning">
@@ -325,37 +335,50 @@
               <label for="homeCleaning">
                 <input
                   type="radio"
-                  name="cleaning-needs"
+                  name="cleaning_needs"
                   id="homeCleaning"
+                  value="Home cleaning"
                 />Home cleaning</label
               >
               <label for="officeCleaning">
                 <input
                   type="radio"
-                  name="cleaning-needs"
+                  name="cleaning_needs"
                   id="officeCleaning"
+                  value="Office cleaning"
                 />Office cleaning
               </label>
               <label for="deepClean">
-                <input type="radio" name="cleaning-needs" id="deepClean" />Deep
-                clean</label
+                <input
+                  type="radio"
+                  name="cleaning_needs"
+                  id="deepClean"
+                  value="Deep clean"
+                />Deep clean</label
               >
               <label for="endOfTenancy">
                 <input
                   type="radio"
-                  name="cleaning-needs"
+                  name="cleaning_needs"
                   id="endOfTenancy"
+                  value="End of tenancy"
                 />End of tenancy
               </label>
               <label for="commercialSpace">
                 <input
                   type="radio"
-                  name="cleaning-needs"
+                  name="cleaning_needs"
                   id="commercialSpace"
+                  value="Commercial space"
                 />Commercial space
               </label>
               <label for="other">
-                <input type="radio" name="cleaning-needs" id="other" />Other
+                <input
+                  type="radio"
+                  name="cleaning_needs"
+                  id="other"
+                  value="Other"
+                />Other
               </label>
             </span>
           </span>
@@ -372,19 +395,20 @@
           </label>
 
           <label for="terms">
-            <input
-              type="checkbox"
-              name="terms-and-conditions"
-              id="terms"
-              required
-            />
+            <input type="checkbox" name="accept_terms" id="terms" required />
             I accept the terms and conditions and understand how my data will be
             used.
           </label>
 
+          <!-- Optional hidden field so you know which form it came from -->
+          <input type="hidden" name="form_name" value="Contact form" />
+
           <div class="submit">
             <button id="submitBtn" type="submit">Submit enquiry</button>
           </div>
+
+          <!-- Status message for user feedback -->
+          <p id="formStatus" aria-live="polite"></p>
         </form>
       </section>
 
@@ -717,5 +741,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- EmailJS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   </body>
 </html>

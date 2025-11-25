@@ -141,7 +141,9 @@
                   >
                 </li>
                 <li class="dropdown-menu" role="listitem">
-                  <a href="./cleaning-service-addOns.html">Add-On Services Cleaning</a>
+                  <a href="./cleaning-service-addOns.html"
+                    >Add-On Services Cleaning</a
+                  >
                 </li>
               </ul>
             </li>
@@ -276,10 +278,10 @@
           <div class="quote-form-layout">
             <!-- FORM -->
             <form
+              id="quoteForm"
               class="quote-form"
               action="#"
               method="post"
-              novalidate
               aria-describedby="quote-privacy-note"
             >
               <!-- WHO YOU ARE -->
@@ -518,18 +520,24 @@
                 </div>
                 <p id="quote-privacy-note" class="quote-privacy">
                   We use your details only to respond to your enquiry. For more
-                  information, please see our <a href="#">privacy policy</a>.
+                  information, please see our
+                  <a href="privacy-policy.html">privacy policy</a>.
                 </p>
               </div>
 
               <div class="quote-actions">
-                <button type="submit" class="primary-btn">
+                <button type="submit" class="primary-btn" id="quoteSubmitBtn">
                   Request my free quote
                 </button>
                 <p class="quote-small">
                   Typically answered within one UK working day.
                 </p>
+                <!-- Status text for EmailJS feedback -->
+                <p id="quoteStatus" class="quote-small" aria-live="polite"></p>
               </div>
+
+              <!-- Optional hidden field so you know where the enquiry came from -->
+              <input type="hidden" name="form_name" value="Free quote form" />
             </form>
 
             <!-- SIDE PANEL / WHAT HAPPENS NEXT -->
@@ -808,5 +816,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- EmailJS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   </body>
 </html>

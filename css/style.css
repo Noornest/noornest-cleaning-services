@@ -167,8 +167,8 @@ header {
   align-items: center;
 }
 .cta-header .cta3 {
-    display: none;
-  }
+  display: none;
+}
 
 .nav-links a {
   font-size: var(--text-font-size);
@@ -223,7 +223,7 @@ header {
   /* color: var(--shade-one); */
   background: var(--accent-color);
   /* margin: 0; */
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   transition: all 0.3s ease-in-out;
   border-radius: 5px;
 }
@@ -948,11 +948,10 @@ footer a:is(:hover, :focus-visible) {
   margin: auto;
 }
 
-footer a .cat-logo 
-{
+footer a .cat-logo {
   padding: 1.5rem;
   background-color: var(--bg-color);
-  margin-block-start: .6rem;
+  margin-block-start: 0.6rem;
 }
 
 .footer-content {
@@ -1461,17 +1460,19 @@ footer a .cat-logo
   width: 100%;
   height: 100vh;
 }
+.commercial-hero.property {
+  background-image: url("/images/service-property.webp");
+}
+.commercial-hero.residential {
+  background-image: url("/images/service-home.webp");
+}
+.commercial-hero.offices {
+  background-image: url("/images/service-home.webp");
+}
 
 .commercial-hero::before {
   inset: 0;
-  background-image: linear-gradient(
-    to bottom,
-    rgb(0, 71, 171),
-    rgba(0, 71, 171, 0.74),
-    rgba(0, 71, 171, 0.363),
-    rgba(0, 71, 171, 0.226),
-    rgba(0, 71, 171, 0.096)
-  );
+  background-color: rgba(0, 0, 0, 0.5);
   content: "";
   position: absolute;
 }
@@ -1496,7 +1497,7 @@ footer a .cat-logo
 }
 
 .commercial-hero-text h1 span {
-  color: var(--primary-color);
+  color: var(--accent-color);
 }
 .commercial-hero-text p {
   line-height: 1.6;
@@ -3297,7 +3298,6 @@ img[alt="icon"] {
   }
 }
 
-
 /* ================================
    RESPONSIVE
    ================================ */
@@ -3526,7 +3526,7 @@ img[alt="icon"] {
     max-width: 80%;
     margin: auto;
   }
-  
+
   .eco-content h2,
   .why-trust-content h2,
   .workspace-heading {
@@ -3648,7 +3648,8 @@ img[alt="icon"] {
   /* .logo img {
   width: 5rem;
 } */
-  .cta-header .cta1, .cta-header .cta2 {
+  .cta-header .cta1,
+  .cta-header .cta2 {
     display: none;
   }
   .cta-header .cta3 {
@@ -3674,22 +3675,22 @@ img[alt="icon"] {
     font-size: 2rem;
   }
 
-  .experience-cta .cta-hero, .trust-cta ul {
+  .experience-cta .cta-hero,
+  .trust-cta ul {
     flex-direction: column;
     gap: 2.5rem;
     align-items: center;
   }
 
-  .commercial-hero-text h1
- {
+  .commercial-hero-text h1 {
     font-size: 2rem;
     font-weight: var(--h1font-weight);
     text-align: center;
- }
+  }
 
   .commercial-hero-cta ul {
     flex-direction: column;
     gap: 2.5rem;
     align-items: center;
-}
+  }
 }

@@ -222,9 +222,9 @@ header {
 .dropdown-menu a:is(:hover, :focus-visible) {
   /* color: var(--shade-one); */
   background: var(--accent-color);
-  /* margin: 0; */
-  padding: 0.5rem 1rem;
-  transition: all 0.3s ease-in-out;
+  margin: 0;
+  padding: 0.5rem;
+  transition: all 0.15s ease-in-out;
   border-radius: 5px;
 }
 
@@ -1467,7 +1467,25 @@ footer a .cat-logo {
   background-image: url("/images/service-home.webp");
 }
 .commercial-hero.offices {
-  background-image: url("/images/service-home.webp");
+  background-image: url("/images/service-office.webp");
+}
+.commercial-hero.retail {
+  background-image: url("/images/school-cleaning.jpeg");
+}
+.commercial-hero.industrial {
+  background-image: url("/images/service-industrial.webp");
+}
+.commercial-hero.addons {
+  background-image: url("/images/service-addons.webp");
+}
+.commercial-hero.contact {
+  background-image: url("/images/contact-hero.jpg");
+}
+.commercial-hero.career {
+  background-image: url("/images/career-hero.jpeg");
+}
+.commercial-hero.quote {
+  background-image: url("/images/free-quote.jpg");
 }
 
 .commercial-hero::before {
@@ -3004,7 +3022,7 @@ img[alt="icon"] {
   font-size: 0.98rem;
   font-weight: 600;
   cursor: pointer;
-  background-color: var(--accent-color, #00b3c7);
+  background-color: var(--primary-color);
   color: #ffffff;
   display: inline-flex;
   align-items: centre;

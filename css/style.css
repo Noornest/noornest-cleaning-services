@@ -986,6 +986,30 @@ footer a .cat-logo {
   border-bottom: 1px solid var(--bg-color);
 }
 
+.footer-insured {
+  width: 100%;
+}
+
+.insured-logos {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  object-fit: contain;
+}
+
+.insured-logos a {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.insured-logos img {
+  width: auto;
+  height: 8rem;
+  margin: 0;
+  border-radius: 10px;
+}
+
 .socials {
   display: flex;
   gap: 1rem;
@@ -995,7 +1019,7 @@ footer a .cat-logo {
 }
 
 .socials a {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .youtube a:is(:hover, :focus-visible) {
